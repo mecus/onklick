@@ -7,6 +7,8 @@ gem 'rails', '4.2.5.1'
 gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+#Including bootstrap on the project
+gem 'bootstrap-sass', '~> 3.3.6'
 # Adding Materialize to the project
 gem 'materialize-sass'
 # Use Uglifier as compressor for JavaScript assets

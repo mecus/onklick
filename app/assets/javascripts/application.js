@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require jquery
+//= require bootstrap-sprockets
 //= require materialize-sprockets
 //= require materialize/extras/nouislider
 //= require jquery_ujs
