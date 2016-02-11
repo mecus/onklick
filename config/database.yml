@@ -51,4 +51,4 @@ production:
   <<: *default
   database: onklick_production
   username: onklick
-  password: <%= ENV['DANO_DATABASE_PASSWORD'] %>
+  password: <%= ENV['ONKLICK_DATABASE_PASSWORD'] %>

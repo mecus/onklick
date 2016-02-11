@@ -29,34 +29,35 @@ ul, ol{
 }
 
 body{
-	background-color: #fff;
 	padding-top: 0px;
 	margin-top: 0px;
 }
-  body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
 
-  main {
-    flex: 1 0 auto;
-  }
+main {
+  flex: 1 0 auto;
+}
 
-   #nav-bar{
-    backoground: #fff;
-    height: 100px;
+ #nav-bar{
+  height: 100px;
+  background-color: transparent;
+}
 
-  }
-
-  .nav-wrapper{
-  	padding-left: 30px;
-  	padding-right: 20px;
-    padding-top: 20px;
-  	height: 100px;
-    border-color: #265D6A;
-    border-bottom: 1px dotted;
-  }
+video{
+  padding-top: 0px;
+}
+.nav-wrapper{
+	padding-left: 30px;
+	padding-right: 20px;
+  padding-top: 20px;
+	height: 100px;
+  border-color: #265D6A;
+  border-bottom: 1px dotted;
+}
 .slides{
   height: auto;
 }
