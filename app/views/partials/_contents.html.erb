@@ -1,33 +1,49 @@
 <div class="container">
-	<div class="row">
-	    <div class="col s12">
-	      <ul class="tabs">
-	        <li class="tab col s3"><a href="#test1">Test 1</a></li>
-	        <li class="tab col s3"><a class="active" href="#test2">Test 2</a></li>
-	        <li class="tab col s3"><a href="#test4">Test 4</a></li>
-	      </ul>
-	    </div>
-		    <div id="test1" class="col s12">
-			  <div class="carousel">
-				    <a class="carousel-item" href="#one!"><img src="http://lorempixel.com/250/250/nature/1"></a>
-				    <a class="carousel-item" href="#two!"><img src="http://lorempixel.com/250/250/nature/2"></a>
-				    <a class="carousel-item" href="#three!"><img src="http://lorempixel.com/250/250/nature/3"></a>
-				    <a class="carousel-item" href="#four!"><img src="http://lorempixel.com/250/250/nature/4"></a>
-				    <a class="carousel-item" href="#five!"><img src="http://lorempixel.com/250/250/nature/5"></a>
-				  </div>
+	<div class="row z-depth-1">
+		<div class="col s12  m4 l4 center-align">
+			<img class="responsive-img materialboxed" src="/assets/Services-1.png">
+			
+			<a class="waves-effect waves-light btn "><i class="material-icons right">code</i>Design</a>
+		</div>
+		<div class="col s12 m4 l4 center-align">
+			<img class="responsive-img materialboxed" src="/assets/Services-2.png">
+			
+			<a class="waves-effect waves-light btn"><i class="material-icons right">done</i>Development</a>
+		</div>
+		<div class="col s12 m4 l4  center-align">
+			<img class="responsive-img materialboxed" src="/assets/Services-3.png">
+			
+			<a class="waves-effect waves-light btn"><i class="material-icons right">code</i>Graphics</a>
+		</div>
 
-				  <div class="carousel carousel-slider">
-				    <a class="carousel-item" href="#one!"><img src="http://lorempixel.com/800/400/food/1"></a>
-				    <a class="carousel-item" href="#two!"><img src="http://lorempixel.com/800/400/food/2"></a>
-				    <a class="carousel-item" href="#three!"><img src="http://lorempixel.com/800/400/food/3"></a>
-				    <a class="carousel-item" href="#four!"><img src="http://lorempixel.com/800/400/food/4"></a>
-				  </div>     
-      
-		    </div>
-		    <div id="test2" class="col s12">Test 2</div>
-		    <div id="test3" class="col s12">Test 3</div>
-		    <div id="test4" class="col s12">Test 4</div>
-   </div>
+	</div>
+
+
+	<div class="row">
+		<h3 class="center-align">We Create Monster Material Design</h3>
+		<p>rem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	</div>
+</div>
+
+
+<div class="row">
+	<div class="parallax-container">
+		<div class="parallax responsive-img"><img src="/assets/Slider4.png"></div>
+        <div class="container caption left-align">
+          	<h3>This is our big Tagline!</h3>
+          	<h5 class="light grey-text text-lighten-3">orem Ipsum is simply dummy text of the printing and typesetting industry.</h5>
+          	<a class="waves-effect waves-light btn"><i class="material-icons right">done</i>button</a>
+        </div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
 	<div class="row z-depth-4">
 		<div class="col s4">
 			<p>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
@@ -95,10 +111,14 @@ ipsum dolor sit amet...'Generate Lorem Ipsum
  
 </p></div>
 	</div>
-</div>
+
 
 <script>
 	   $(document).ready(function(){
       $('.carousel').carousel();
     });
+
+	 $(document).ready(function(){
+      $('.parallax').parallax();
+    });   
 </script>
