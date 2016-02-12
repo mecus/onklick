@@ -44,12 +44,9 @@ main {
 
  #nav-bar{
   height: 100px;
-  background-color: transparent;
+  background-color: $main-color !important;
 }
 
-video{
-  padding-top: 0px;
-}
 .nav-wrapper{
 	padding-left: 30px;
 	padding-right: 20px;
