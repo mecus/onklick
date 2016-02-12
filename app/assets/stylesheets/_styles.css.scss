@@ -44,7 +44,7 @@ main {
 
  #nav-bar{
   height: 100px;
-  background-color: $main-color !important;
+  background-color: $primary-color !important;
 }
 
 .nav-wrapper{
@@ -59,26 +59,27 @@ main {
 }
 
 
-  h1 {
-    font-family: $myfont;
-  }
+h1 {
+  font-family: $myfont;
+}
 
-  .nav-wrapper ul li{
-    font-family: $myfont;
-    font-size: 18pt;
-    font-width: 800;
-    letter-spacing: 5px;
-  }
+.nav-wrapper ul li a{
+  font-family: $myfont;
+  font-size: 12px;
+  font-width: 400;
+  letter-spacing: 4px;
+}
 .nav-wrapper ul li a:hover{
   text-decoration: none !important;
   background: none;
   color: green;
 }
-//.brand-logo img{
- // width: 260px;
- // height: 50px;
- // padding: 0 20px 0 20px;
-//}
+
+.brand-logo img{
+  width: 200px;
+  height: 35px;
+  padding: 0 20px 0 20px;
+}
  
 
 
@@ -87,10 +88,7 @@ main {
   height: 80%;
   position: relative;
 }
-.jumbotron{
-  bottom: 80%;
 
-}
 .chip-contianer{
   background-color: $main-color;
   height: 100px;
@@ -106,7 +104,12 @@ main {
 .sidebar-nav li a{
   color: #fff;
 }
-
-
-
+#footer-nav{
+  background-color: $primary-color;
+  min-height: 40px;
+  padding-bottom: 0px;
+}
+.parallax-container{
+  height: 800px;
+}
 
