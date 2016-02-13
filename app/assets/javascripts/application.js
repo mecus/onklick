@@ -19,11 +19,11 @@
 var nagbar, yPos;
 function yScroll(){
   nagbar = document.getElementById('nagbar');
-  yPos = window.pageYOffset;
-  if(yPos > 150){
+  yPos = window.pageYOffset; 
+  if(yPos > 50){
     nagbar.style.height = "60px";
     nagbar.style.paddingTop = "0px";
-    nagbar.style.backgroundColor = "blue";
+    nagbar.style.boxShadow = "grey light";
   } else {
     nagbar.style.height = "100px";
     nagbar.style.paddingTop = "20px";
