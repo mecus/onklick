@@ -16,3 +16,17 @@
 //= require jquery_ujs
 //= require turbolinks
 
+var nagbar, yPos;
+function yScroll(){
+  nagbar = document.getElementById('nagbar');
+  yPos = window.pageYOffset;
+  if(yPos > 150){
+    nagbar.style.height = "60px";
+    nagbar.style.paddingTop = "0px";
+    nagbar.style.backgroundColor = "blue";
+  } else {
+    nagbar.style.height = "100px";
+    nagbar.style.paddingTop = "20px";
+  }
+}
+window.addEventListener("scroll", yScroll);

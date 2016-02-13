@@ -44,8 +44,12 @@ main {
   flex: 1 0 auto;
 }
 
- #nav-bar{
+ #nagbar{
   background-color: $primary-color !important;
+  height: 100px;
+  padding-top: 20px;
+  overflow: hidden;
+  transition: height 0.3s linear 0s, padding 0.3s linear 0s;
 }
 
 .nav-wrapper{

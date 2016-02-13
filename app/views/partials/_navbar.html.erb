@@ -1,5 +1,5 @@
-<div id="page-top" data-spy="scroll" class="navbar-fixed">
-  <nav id="nav-bar" role="navigation">
+<div id="page-top" class="navbar-fixed">
+  <nav id="nagbar" role="navigation">
     <div class="nav-wrapper container page-scroll">
       <a href="#page-top" class="brand-logo"><img src="/assets/header_logo_white.png"></a>
       <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -58,16 +58,6 @@
     }
 });
 
-//jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
-});
 
     //$('.button-collapse').sideNav({
      // menuWidth: 200,
@@ -78,3 +68,10 @@ $(function() {
  // );
       
 </script>
+
+
+
+
+
+
+
