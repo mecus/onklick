@@ -9,6 +9,7 @@ gem 'rails', '4.2.5.1'
 # Setting up the app to be deploy to heroku
 group :production do
 	gem 'pg'
+	gem 'rails_utils'
 end
 
 group :development do
