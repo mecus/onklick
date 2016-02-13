@@ -1,4 +1,4 @@
-<div class="parallax-container">
+<div id="company" class="parallax-container section scrollspy">
 	<div class="parallax"><img src="/assets/ourcompany.png"></div>
 		<div class="container caption left-align">
 		<h3>About Company</h3>
@@ -7,6 +7,7 @@
 		<br><br><br><br>
 		<div class="container caption center-align">
 		<h3>IN OUR FLESH AND BLOOD!</h3>
+		<h5>We are born to be creative</h5>
 		<br><br>
 		<h4 class="light grey-text text-lighten-3">Among everything we do ,quality and customer care comes first, we focuses on the things that matter to our clients by focusing on their preceding needs and goals and how to achieve them. most of our clients use us to manage every aspect of their online presents from designing and developing their website to providing a range of advertising platform and support to help them achieve their goals. we are aware that digital marketing are so complicated and we will make sure we don’t confuse you by speaking the language we both understand no complex acronyms.
 		we provide services across a huge range of industry, from small online shop to large business.</h4>
@@ -18,52 +19,67 @@
 <hr>
 <!--Holding Container for Services -->
 
-<div class="container">
-	<div class="row z-depth-1" id="image-test">
-		<div class="col s12 m8 l8">
-			<div class="row">
-				<div class="col s12  m6 l6 center-align">
-				<img class="responsive-img materialboxed" src="/assets/Services-1.png">
-
-				<a class="waves-effect waves-light btn "><i class="material-icons right">code</i>Design</a>
+<div id="services" class="container section scrollspy">
+	<div class="row" id="image-test">
+				<div class="col s12  m4 l4 center-align">
+				  <div class="card fade1">
+				    <div class="card-image waves-effect waves-block waves-light">
+				      <img class="activator" src="/assets/Services-3.png">
+				    </div>
+				    <div class="card-content">
+				      <span class="card-title activator grey-text text-darken-4">Web Design<i class="material-icons right">more_vert</i></span>
+				      <p><a href="#">This is a link</a></p>
+				    </div>
+				    <div class="card-reveal">
+				      <span class="card-title grey-text text-darken-4">txt<i class="material-icons right">close</i></span>
+				      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+				    </div>
+				  </div>
+							
 				</div>
-				<div class="col s12 m6 l6 center-align">
-				<img class="responsive-img materialboxed" src="/assets/Services-2.png">
+				<div class="col s12 m4 l4 center-align">
+				  <div class="card fade2">
+				    <div class="card-image waves-effect waves-block waves-light">
+				      <img class="activator" src="/assets/Services-1.png">
+				    </div>
+				    <div class="card-content">
+				      <span class="card-title activator grey-text text-darken-4">Marketing<i class="material-icons right">more_vert</i></span>
+				      <p><a href="#">This is a link</a></p>
+				    </div>
+				    <div class="card-reveal">
+				      <span class="card-title grey-text text-darken-4">txt<i class="material-icons right">close</i></span>
+				      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+				    </div>
+				  </div>
 
-				<a class="waves-effect waves-light btn"><i class="material-icons right">done</i>Development</a>
 				</div>
-			</div>
 
-			<div class="row">
-				<div class="col s12  m6 l6 center-align">
-				<img class="responsive-img materialboxed" src="/assets/Services-1.png">
+				<div class="col s12  m4 l4 center-align">
+				  <div class="card fade3">
+				    <div class="card-image waves-effect waves-block waves-light">
+				      <img class="activator" src="/assets/Services-4.png">
+				    </div>
+				    <div class="card-content">
+				      <span class="card-title activator grey-text text-darken-4">Branding<i class="material-icons right">more_vert</i></span>
+				      <p><a href="#">This is a link</a></p>
+				    </div>
+				    <div class="card-reveal">
+				      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+				      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+				    </div>
+				  </div>
 
-				<a class="waves-effect waves-light btn "><i class="material-icons right">code</i>Design</a>
-				</div>
-				<div class="col s12 m6 l6 center-align">
-				<img class="responsive-img materialboxed" src="/assets/Services-2.png">
-
-				<a class="waves-effect waves-light btn"><i class="material-icons right">done</i>Development</a>
-				</div>
-			</div>
-
-		</div><!--End of the left col with 8 items -->
-		<div class="col s12 m4 l4">
-			<div class="row">
-				<div class="col s12  center-align">
-				<img class="responsive-img materialboxed" src="/assets/Services-3.png">
 				
-				<a class="waves-effect waves-light btn"><i class="material-icons right">code</i>Graphics</a>
 				</div>
-			</div>
-		</div><!--End of right col with 1 item -->
-
+				
 	</div><!-- End of container with Z-depth -->
 </div><!-- End of container -->
 
-<div class="container">
-	<div class="row z-depth-4" id="cards">
+<div id="contact" class="container section scrollspy">
+	<div class="row z-depth-1" id="cards">
+		<br>
 		<h3 class="center-align">We Create Monster Material Design</h3>
+		<br><br>
 		<div class="col s12 m6 l6">
 			  <div class="card medium blue-grey darken-1">
 	            <div class="card-content white-text">
@@ -91,6 +107,7 @@
 					<p>Here is some more information about this product that is only revealed once clicked on.</p>
 				</div>
 			</div>
+			<br>
 		</div>
 	</div>
 </div>
@@ -98,4 +115,5 @@
 	  $(document).ready(function(){
       $('.parallax').parallax();
     });
+      
 </script>
