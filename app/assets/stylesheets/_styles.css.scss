@@ -31,6 +31,8 @@ ul, ol{
 body{
 	padding-top: 0px;
 	margin-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 body {
   display: flex;
@@ -108,6 +110,9 @@ h1 {
   background-color: $primary-color;
   min-height: 40px;
   padding-bottom: 0px;
+  margin-bottom: 0px;
+  border: none !important;
+  border-radius: 0px;
 }
 .parallax-container{
   height: 800px;
