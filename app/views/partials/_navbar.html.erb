@@ -1,6 +1,6 @@
-<div id="page-top" class="navbar-fixed">
+<div id="page-top" data-spy="scroll" class="navbar-fixed">
   <nav id="nagbar" role="navigation">
-    <div class="nav-wrapper container">
+    <div class="nav-wrapper container page-scroll">
       <a href="#page-top" class="brand-logo"><img src="/assets/header_logo_white.png"></a>
       <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
@@ -58,6 +58,15 @@
     }
 });
 
+$(function() {
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});
 
     //$('.button-collapse').sideNav({
      // menuWidth: 200,

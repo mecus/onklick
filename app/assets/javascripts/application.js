@@ -23,7 +23,7 @@ function yScroll(){
   if(yPos > 50){
     nagbar.style.height = "60px";
     nagbar.style.paddingTop = "0px";
-    nagbar.style.boxShadow = "grey light";
+    nagbar.style.backgroudColor = "#265D6A";
   } else {
     nagbar.style.height = "100px";
     nagbar.style.paddingTop = "20px";
