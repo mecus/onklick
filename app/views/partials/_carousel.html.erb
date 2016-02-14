@@ -1,41 +1,24 @@
-<div id="carouse-wrapper">
+<div>
 	  <div class="slider">
-    <ul class="slides">
+    <ul class="slides" id="slider-wrapper">
       <li>
-      <video id="video-elem" loop autoplay muted >
-        <source src="/assets/Creative.mp4" type="video/mp4">
-     </video>
-
-
-        <div class="container caption center-align"><br><br><br>
-          <h3>We Create Outstanding </h3>
-          <h4 class="light white-text text-lighten-3">Brands, Website & Marketing Campaiagn</h4>
+        <video id="video-elem" loop autoplay muted >
+            <source src="/assets/Creative.mp4" type="video/mp4">
+        </video>
+        <div id="vtext" class="container center-align"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <h3 class="light white-text text-lighten-3">We Create Outstanding </h3>
+          <h4 class="light white-text text-lighten-3">Brands, Website & Marketing Campaign</h4>
           <br><br>
-          <a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>Talk to us now</a>
-        
+
+          <a href="#"><button id="vbtn" class="btn btn-success btn-sm waves-effect waves-light"><span class="glyphicon glyphicon-ok"></span>  Talk to us</button></a>      
         </div>
       </li>
+
       <li>
         <video id="video-elem" loop autoplay muted >
-        <source src="/assets/Creative.mp4" type="video/mp4">
-     </video>
-        <div class="container caption center-align"><br><br><br>
-          <h3>We Love Creativity</h3>
-          <h5 class="light grey-text text-lighten-3">we have the expertise </h5>
-          <h5 class="light grey-text text-lighten-3">to transform the look of your website.</h5>
-          <h5 class="light grey-text text-lighten-3">with our magical skills.</h5>
-          <a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>Talk to us now</a>
-        </div>
-      </li>
-      <li>
-        <video id="video-elem" loop autoplay muted >
-        <source src="/assets/Creative.mp4" type="video/mp4">
-     </video>
-        <div class="container caption center-align"><br><br><br>
-          <h3>all things digital </h3>
-          <h4 class="light grey-text text-lighten-3">with quality results everytime.</h4>
-          <a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>Talk to us now</a>
-        </div>
+          <source src="/assets/Creative.mp4" type="video/mp4">
+        </video>
+      
       </li>
     </ul>
   </div>
@@ -44,6 +27,5 @@
     $(document).ready(function(){
       $('.slider').slider({full_width: true});
       $('.slider').slider({height: 900});
-
           });
   </script>
