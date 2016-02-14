@@ -61,7 +61,10 @@ h1 {
   font-size: 12px;
   font-width: 400;
   letter-spacing: 4px;
+  padding-left: 4px;
+  padding-right: 2px;
 }
+
 .nav-wrapper ul li a:hover{
   text-decoration: none !important;
   background: none;
@@ -70,8 +73,8 @@ h1 {
 
 .brand-logo img{
   width: 200px;
-  height: 35px;
-  padding: 0 30px 0 20px;
+  height: 30px;
+  padding: 0 40px 0 20px;
 }
 #nbtn {
   background-color: transparent;
@@ -108,7 +111,7 @@ h1 {
   transition-property: opacity;
 
 }
-div#vtext h3, h4{
+div#vtext h2, h4{
   font-family: $myfont !important;
   font-width: 600;
   letter-spacing: 3px;
