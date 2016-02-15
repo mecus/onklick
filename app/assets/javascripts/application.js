@@ -20,7 +20,7 @@ var nagbar, yPos;
 function yScroll(){
   nagbar = document.getElementById('nagbar');
   yPos = window.pageYOffset; 
-  if(yPos > 50){
+  if(yPos > 30){
     nagbar.style.height = "60px";
     nagbar.style.paddingTop = "0px";
     nagbar.style.backgroudColor = "#265D6A";

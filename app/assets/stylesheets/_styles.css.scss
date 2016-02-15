@@ -13,17 +13,29 @@
 }
 
 
-h1{
-  font-size: 32px;
+h1 {
+  font-size: 26px;
+  font-family: Dosis;
+  font-width: 400;
+  padding: 10px 0px 10px 0px;
+  letter-spacing: 8px;
+  font-variant: ExtraLight;
 }
 h2{
   font-size: 28px;
 }
 h3 {
   font-family: Open Sans;
-  font-width: small;
+  font-width: 300;
   font-variant: Light;
 }
+h4 {
+  font-size: 18px;
+  font-family: Open Sans;
+  font-width: 300;
+  font-variant: Light;
+  color: grey;
+  }
 h6{
     font-weight: 700;
 }
