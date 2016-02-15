@@ -11,6 +11,10 @@
 @media #{$large-and-up} {
   // styles for large screens and up
 }
+html, body{
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
 
 
 h1 {
@@ -54,7 +58,7 @@ body{
 
 
  #nagbar{
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.0);
   height: 100px;
   padding-top: 20px;
   transition: height 0.3s linear 0s, padding 0.3s linear 0s;
