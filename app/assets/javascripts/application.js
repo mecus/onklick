@@ -30,3 +30,8 @@ function yScroll(){
   }
 }
 window.addEventListener("scroll", yScroll);
+
+window.addEventListener("load", function(){
+  var preloader = document.getElementById("preloader");
+  document.body.removeChild(preloader);
+});
