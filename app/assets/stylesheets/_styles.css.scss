@@ -83,10 +83,11 @@ div#preloader > div#preload{
 }
 
  #nagbar{
-  background-color: rgba(0, 0, 0, 0.0);
+  background-color: $h-color;
   height: 100px;
   padding-top: 20px;
   padding-left: 20px;
+  padding-right: 20px;
   transition: height 0.3s linear 0s, padding 0.3s linear 0s;
   box-shadow: none;
 }
@@ -97,6 +98,11 @@ div#preloader > div#preload{
 .nav-wrapper{
 	padding-left: 30px;
 	padding-right: 50px;
+  left: 0px;
+  top: 0px;
+  margin: 0px;
+  border-color: red;
+  border: 5px;
 }
 
 h1 {
@@ -126,6 +132,14 @@ h1 {
   background-color: transparent;
   border: 1px solid #fff;
   border-radius: 20%;
+}
+#header{
+  background-color:  $h-color;
+  height: 800px;
+  min-width: 100%;
+  position: relative;
+  top: 0px;
+  z-index: -1000;
 }
 ///////////////////
 //Video bacground//
