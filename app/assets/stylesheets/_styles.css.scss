@@ -59,6 +59,11 @@ body{
   top: 0;
   z-index: -999;
 }
+.row .col{
+  padding: 0 0rem;
+}
+
+
 div#preloader{
   position: fixed;
   top: 0px;
@@ -233,11 +238,50 @@ button#vbtn:hover{
   background-color: blue;
   opacity: 0.2;
   height: 2px;
+  visibility: hidden;
 }
 
-
-
-
+#section-1{
+  height: 100%;
+  width: 100%;
+  margin: 50px 0 100px 0;
+  padding: 0px;
+}
+.hero-inner1{
+  height: 600px;
+  float: left;
+  background: #232a3f;
+  padding: 0px;
+  margin: 0px;
+  
+}
+.hero-inner1 h4 {
+  padding: 100px 50px 0px 50px;
+  margin: 0px;
+  color: grey;
+  
+}
+.hero-inner1 p{
+  padding: 50px;
+  margin: 0px;
+  color: #fff;
+  opacity: 0.8;
+  
+}
+.hero-inner2 {
+  height: 600px;
+  float: left;
+  width: 100%;
+  padding-left: 0px;
+  margin: 0px;
+}
+.hero-inner2 img{
+  height: 100%;
+  width: 100%;
+  padding-left: 0px;
+  margin: 0px;
+  display: block; 
+}
 
 
 
