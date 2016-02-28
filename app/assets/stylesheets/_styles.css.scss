@@ -134,12 +134,22 @@ h1 {
   border-radius: 20%;
 }
 #header{
-  background-color:  $h-color;
+  
   height: 800px;
   min-width: 100%;
   position: relative;
   top: 0px;
   z-index: -1000;
+}
+#header{
+  background-color:  $h-color;
+//   -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+//    animation: mymove 5s infinite;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {background-color: $h-color;}
+    to {background-color: red;}
 }
 #inner-header h1{
   font-size: 32pt;
