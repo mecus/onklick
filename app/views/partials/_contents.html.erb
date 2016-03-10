@@ -93,7 +93,7 @@
 	</div><!-- End of container with Z-depth -->
 </div><!-- End of container -->
 
-<div id="contact" class="section scrollspy">
+<div class="section scrollspy">
 	<div class="row " id="cards">
 		<section id="section-2" class="row">
 			<div class="col s12 m7 l6 hero-inner2">
@@ -102,30 +102,66 @@
 			<div class="col s12 m5 l6 hero-inner1-1">
 				<h4>HOSTING SOLUTION</h4>
 				<p class="text-flow">Our service is fully hosted using our secure UK based servers. This means that you pay a monthly (or annual) charge and this covers the hosting, access to the CMS so that you can update your website and also technical support. We look after all security updates and include a UK domain name within this charge. As standard all accounts come with 3 pro email accounts as well.
-
-				Hosting and UK domain name
-				3 Pro email accounts (each account is 1 GB)
-				UK based fast servers
-				Access to the CMS putting you in control
-				Technical support
-				Optional marketing help available</p>
+				</p>
+				<ul>
+					<li>Hosting and domain name</li>
+					<li>3 Pro email accounts (each account is 1 GB)</li>
+					<li>UK based fast servers</li>
+					<li>Access to the CMS putting you in control</li>
+					<li>Technical support</li>
+					<li>Optional marketing help available</li>
+				</ul>
 			</div>
 
 		</section>
 	</div>
 </div>
 
- <div class="parallax-container valign-wrapper">
-      <div class="parallax"><img src="/assets/workspace.jpg"></div>
-      <div class="container caption center-align">
+<div class="parallax-container valign-wrapper">
+    <div class="parallax"><img src="/assets/workspace.jpg"></div>
+    <div class="container caption center-align">
 		<h3 class="valign">We are your best choice</h3>
 		<h5 class="valign light grey-text text-lighten-3 text-flow">We design and build stunning bespoke websites and we can help with a wide range of online marketing strategies. </h5>
-		</div>
-    </div>
+	</div>
+</div>
+<div class="container">
+	<div id="contact"><h1 class="center-align">SEND US MESSAGE</h1></div>
+	<form class="col s12">
+	  <div class="row">
+	    <div class="input-field col s6">
+	      <input id="first_name" type="text" class="validate">
+	      <label for="first_name">First Name</label>
+	    </div>
+	    <div class="input-field col s6">
+	      <input id="last_name" type="text" class="validate">
+	      <label for="last_name">Last Name</label>
+	    </div>
+	  </div>
+
+	  <div class="row">
+	    <div class="input-field col s12">
+	      <input id="email" type="email" class="validate">
+	      <label for="email">Email</label>
+	    </div>
+	  </div>
+	      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Message</label>
+        </div>
+      </div>
+      <button class="btn waves-effect waves-light" type="submit" name="action">Send Message
+   		 <i class="material-icons right">send</i>
+  	  </button>
+	</form>
+	<br><br>
+</div>
 
 <script>
 	  $(document).ready(function(){
       $('.parallax').parallax();
     });
       
+    //$('#textarea1').val('Write Your Message here');
+ 	$('#textarea1').trigger('autoresize');  
 </script>
