@@ -431,28 +431,35 @@ button#vbtn:hover{
     opacity: 0.8;
   }
 }
-.footer-copyright {
-  padding-right: 50px;
-  padding-left: 50px;
-  .top-page {
-    .link-top {
-      width: 40px;
-      height: 40px;
-      float: right;
-        a {
-   
-      display: inline-block;
-      color: #fff;
-      text-decoration: none;
-      text-transform: uppercase;
-      opacity: 0.5;
-      }
-      a:hover {
-        color: grey;
+#footer-nav{
+  ine-height: 40px;
+  height: 40px;
+  .footer-copyright {
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 10px;
+    color: #fff;
+    .top-page {
+      .link-top {
+        width: 40px;
+        height: 40px;
+        float: right;
+          a {
+     
+        display: inline-block;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        opacity: 0.5;
+        }
+        a:hover {
+          color: grey;
+        }
       }
     }
   }
 }
+
 ////////////////////////
 #cards, #contact{
   padding: 0px;
@@ -478,5 +485,22 @@ button#vbtn:hover{
     font-size: 18px;
   }
 }
+#contact-form {
+  #submit-button {
+    padding-bottom: 20px;
 
+    input {
+      font-family: Roboto, Open Sans;
+      font-size: 2rem;
+      text-transform: uppercase;
+      color: #fff;
+      text-align: center;
+    }
+  }
+}
+@media (max-width: 480px) {
+  #copyright p {
+    font-size: 12px;
+  }
+}
 
