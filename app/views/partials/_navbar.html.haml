@@ -1,0 +1,71 @@
+#page-top.navbar-fixed{"data-spy" => "scroll"}
+  %nav#nagbar2{:role => "navigation"}
+    .nav-wrapper.page-scroll
+      %a.brand-logo{:href => "#page-top"}
+        %img{:src => "/assets/header_logo_white.png"}/
+      %a.button-collapse{"data-activates" => "slide-out", :href => "#"}
+        %i.material-icons menu
+      %ul.right.hide-on-med-and-down
+        %li.hidden
+          %a.page-scroll{:href => "#page-top"}
+        %li
+          %a.page-scroll{:href => "#company"} COMPANY
+        %li
+          %a.page-scroll{:href => "#services"} SERVICES
+        %li
+          %a.page-scroll{:href => "#contact"} CONTACT
+        %a#nbtn.waves-effect.waves-light.btn Get Started
+      %ul#slide-out.side-nav
+        .chip-contianer.center-align
+          .chip
+            %img{:alt => "Contact Person", :src => "/assets/Team-4.png"}/
+            Austin Oseh
+            %h6 Developer
+        .sidebar-nav
+          %li
+            %a{:href => "sass.html"} SERVICES
+          %li
+            %a{:href => "badges.html"} COMPANY
+          %li
+            %a{:href => "collapsible.html"} CONTACT
+        / Switch
+        .switch.center-align
+          %label
+            Off
+            %input{:type => "checkbox"}/
+            %span.lever
+            On
+        .switch.center-align
+          %label
+            Off
+            %input{:type => "checkbox"}/
+            %span.lever
+            On
+:javascript
+  $(".button-collapse").sideNav();
+  
+            $(window).scroll(function() {
+      if ($(".navbar").offset().top > 50) {
+          $(".navbar-fixed-top").addClass("top-nav-collapse");
+      } else {
+          $(".navbar-fixed-top").removeClass("top-nav-collapse");
+      }
+  });
+  
+  $(function() {
+      $('a.page-scroll').bind('click', function(event) {
+          var $anchor = $(this);
+          $('html, body').stop().animate({
+              scrollTop: $($anchor.attr('href')).offset().top
+          }, 1500, 'easeInOutExpo');
+          event.preventDefault();
+      });
+  });
+  
+      //$('.button-collapse').sideNav({
+       // menuWidth: 200,
+        //menuHeight: 300, // Default is 240
+       // edge: 'right', // Choose the horizontal origin
+       // closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+     // }
+   // );

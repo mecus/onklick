@@ -18,7 +18,7 @@
 
 var nagbar, yPos;
 function yScroll(){
-  nagbar = document.getElementById('nagbar');
+  nagbar = document.getElementById('nagbar', 'nagbar2');
   yPos = window.pageYOffset; 
   if(yPos > 30){
     nagbar.style.height = "60px";

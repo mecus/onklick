@@ -1,0 +1,74 @@
+#page-top.navbar-fixed{"data-spy" => "scroll"}
+  %nav#nagbar{:role => "navigation"}
+    %a.button-collapse.show-on-large{"data-activates" => "slide-out", :href => "#"}
+      %i.material-icons menu
+    .nav-wrapper.page-scroll
+      %a.brand-logo{:href => "#page-top"}
+        %img{:src => "/assets/header_logo_white.png"}/
+      %ul.right
+        %li.hidden
+          %a.page-scroll{:href => "#page-top"}
+        %li
+          %a.page-scroll{:href => "emeka@miscotech.co.uk"}
+            %i.large.material-icons email
+        %li
+          %a.page-scroll{:href => "#services"}
+            %i.large.material-icons search
+      %ul#slide-out.side-nav
+        .chip-contianer.center-align
+          %a.brand-logo{:href => "#page-top"}
+            %img{:src => "/assets/header_logo_white.png"}/
+        .sidebar-nav.center
+          %li.hidden
+            %a.page-scroll{:href => "#page-top"}
+          %li= link_to "COMPANY", pages_company_path
+          %li
+            %a.page-scroll{:href => "#services"} SERVICES
+          %li
+            %a.page-scroll{:href => "#contact"} CONTACT
+        / Switch
+        .switch.center-align
+          %label
+            Off
+            %input{:type => "checkbox"}/
+            %span.lever
+            On
+        .switch.center-align
+          %label
+            Off
+            %input{:type => "checkbox"}/
+            %span.lever
+            On
+        .chip-contianer.center-align
+          .chip
+            %img{:alt => "Contact Person", :src => "/assets/Team-4.png"}/
+            Austin Oseh
+            %h6 Developer
+:javascript
+  $(".button-collapse").sideNav();
+  
+            $(window).scroll(function() {
+      if ($(".navbar").offset().top > 50) {
+          $(".navbar-fixed-top").addClass("top-nav-collapse");
+      } else {
+          $(".navbar-fixed-top").removeClass("top-nav-collapse");
+      }
+  });
+  
+  $(function() {
+      $('a.page-scroll').bind('click', function(event) {
+          var $anchor = $(this);
+          $('html, body').stop().animate({
+              scrollTop: $($anchor.attr('href')).offset().top
+          }, 1500, 'easeInOutExpo');
+          event.preventDefault();
+      });
+  });
+  
+      //$('.button-collapse').sideNav({
+       // menuWidth: 200,
+        //menuHeight: 300, // Default is 240
+       // edge: 'right', // Choose the horizontal origin
+       // closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+     // }
+   // );

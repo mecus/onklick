@@ -1,0 +1,48 @@
+#contact-form.container
+  #contact
+    %h1.center-align SEND US MESSAGE
+  %p.notice= notice
+  = form_for :contact, url: contacts_path, remote: true do |f|
+    - if @contact.errors.any?
+      #error_explanation
+        %h2
+          = pluralize(@contact.errors.count, "error")
+          prohibited this contact from being saved:
+        %ul
+          - @contact.errors.full_messages.each do |message|
+            %li= message
+    %br/
+    %br/
+    %form.col.s12
+      .row
+        .input-field.col.s6
+          = f.text_field :first_name
+          %label{:for => "first_name"} First Name
+        .input-field.col.s6
+          = f.text_field :last_name
+          %label{:for => "last_name"} Last Name
+      %br/
+      %br/
+      .row
+        .input-field.col.s6
+          = f.text_field :email
+          %label{:for => "email"} Email
+        .input-field.col.s6
+          = f.text_field :telephone
+          %label{:for => "telephone"} Telephone
+      %br/
+      %br/
+      .row
+        .input-field.col.s12
+          = f.text_area :message, class: "materialize-textarea", id: "textarea1"
+          %label{:for => "textarea1"} Message
+      %br/
+      %br/
+      %button#submit-button.btn.waves-effect.waves-light
+        = f.submit "Send Message"
+        %i.material-icons.right send
+%br/
+%br/
+:javascript
+  //$('#textarea1').val('Write Your Message here');
+    $('#textarea1').trigger('autoresize');

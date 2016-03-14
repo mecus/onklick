@@ -116,8 +116,16 @@ div#preloader > div#preload{
   bottom: 50%;
 
 }
-
- #nagbar{
+#nagbar2{
+  background-color: $h-color;
+  height: 100px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: height 0.3s linear 0s, padding 0.3s linear 0s;
+  box-shadow: none;
+}
+#nagbar{
   background-color: $h-color;
   height: 100px;
   padding-top: 20px;
@@ -166,7 +174,7 @@ h1 {
 #nbtn {
   background-color: transparent;
   border: 1px solid #fff;
-  border-radius: 20%;
+  border-radius: 0%;
 }
 #header{
   
@@ -503,4 +511,30 @@ button#vbtn:hover{
     font-size: 12px;
   }
 }
+// Company section
+section {
+  .company-bg {
+  background-image: url('ourcompany.png');
+  background-color: blach;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 200px;
+  width: 100%;
+  height: 600px;
+  h1 {
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding-bottom: 0px;
+  }
+  }
+}
+.company-text {
+  height: 400px;
+  padding: 50px 20px;
+
+}
+
+
+
+
 
