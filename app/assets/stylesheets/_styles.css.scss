@@ -261,9 +261,10 @@ button#vbtn:hover{
 }
 #hero-text{
   padding: 30px 10px;
-  border-left: 1px solid grey;
+  border-left: 1px solid;
+  border-color: $primary-color;
 }
-@media (max-width: 680px){
+@media (max-width: 6 80px){
   #hero-text {
     border-left: 0px;
   }
@@ -472,6 +473,14 @@ button#vbtn:hover{
 #cards, #contact{
   padding: 0px;
   margin: 0px;
+}
+#contact {
+  h1 {
+    color: $primary-color;
+    font-weight: 800;
+    font-size: 26px;
+    padding-top: 80px;
+  }
 }
 #contact-form {
   padding: 50px 20px;

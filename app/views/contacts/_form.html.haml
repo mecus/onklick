@@ -1,4 +1,4 @@
-#contact-form.container
+#contact-form.container#contact-f
   #contact
     %h1.center-align SEND US MESSAGE
   %p.notice= notice
@@ -11,7 +11,6 @@
         %ul
           - @contact.errors.full_messages.each do |message|
             %li= message
-    %br/
     %br/
     %form.col.s12
       .row
