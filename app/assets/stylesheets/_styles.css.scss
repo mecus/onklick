@@ -263,7 +263,7 @@ button#vbtn:hover{
   padding: 30px 10px;
   border-left: 1px solid grey;
 }
-@media (max-width: 480px){
+@media (max-width: 680px){
   #hero-text {
     border-left: 0px;
   }
@@ -537,6 +537,9 @@ section {
 // Services Section start here
 .service-text-wrapper {
   #services {
+    hr{
+      width: 150px;
+    }
     h4 {
       padding-top: 50px;
       font-size: 26px;
@@ -547,6 +550,11 @@ section {
       border-color: #fff;
     }
     .service-text {
+      i {
+        font-size: 34px;
+        color: #fff;
+        padding-bottom: 20px;
+      }
       p {
        // font-family: Open Sans, San-serif; 
         padding-top: 50px;
@@ -569,16 +577,20 @@ section {
 
 }
 .service-section {
-  .first-serve {
-    h1{
-      background-color: red;
+     h1{
+      color: $primary-color;
+      font-variant: bolder;
+      font-weight: 800;
+      font-size: 24px;
       background-size: cover;
       background-position: relative;
+      padding: 30%;
     }
+  .first-serve {
     background-image: url('web-design.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 33.3%;
+    min-width: 33.3%;
     height: 500px;
   }
   .second-serve {
@@ -596,6 +608,23 @@ section {
     height: 500px;
   }
 }
+.company-image-section {
+  h1 {
+    color: $primary-color;
+    font-size: 26px;
+    font-weight: 800;
 
+  }
+  hr {
+    width: 150px;
+
+  }
+  background-image: url('company-bg.jpg');
+  background-position: fixed;
+  background-color: black;
+  background-size: cover;
+  min-width: 100%;
+  height: 700px;
+}
 
 
