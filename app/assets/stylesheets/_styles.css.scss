@@ -339,8 +339,8 @@ button#vbtn:hover{
 #section-1{
   height: 100%;
   width: 100%;
-  margin: 50px 0 100px 0;
-  padding: 0px;
+  margin: 0 0 0 0;
+  padding: 0;
 }
 .hero-text {
   width: 50%;
@@ -406,11 +406,11 @@ button#vbtn:hover{
 #section-2{
   height: 100%;
   width: 100%;
-  margin: 50px 0 0px 0;
+  margin: 0px 0 0px 0;
   padding: 0px;
 }
 .section {
-  padding-top: 1rem;
+  padding-top: 0rem;
   padding-bottom: 0rem;
 }
 .hero-inner1-1{
@@ -534,7 +534,68 @@ section {
 
 }
 
+// Services Section start here
+.service-text-wrapper {
+  #services {
+    h4 {
+      padding-top: 50px;
+      font-size: 26px;
+      font-weight: 800;
+      font-variant: bold;
+      color: #fff;
+     // border-bottom: 5px solid;
+      border-color: #fff;
+    }
+    .service-text {
+      p {
+       // font-family: Open Sans, San-serif; 
+        padding-top: 50px;
+        color: #fff;
+        font-size: 14px;
+        letter-spacing: 2px;
+        font-weight: 200;
+        line-height: 24px;
+        text-align: center;
+      }
+    }
+  }
+  background-image: url('text-cover.png');
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  width: 100%;
+  min-height: 500px;
 
+}
+.service-section {
+  .first-serve {
+    h1{
+      background-color: red;
+      background-size: cover;
+      background-position: relative;
+    }
+    background-image: url('web-design.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33.3%;
+    height: 500px;
+  }
+  .second-serve {
+    background-image: url('Marketing.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33.3%;
+    height: 500px;
+  }
+  .third-serve {
+    background-image: url('Branding.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33.3%;
+    height: 500px;
+  }
+}
 
 
 
