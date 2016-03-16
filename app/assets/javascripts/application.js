@@ -16,17 +16,20 @@
 //= require jquery_ujs
 //= require turbolinks
 
+
 var nagbar, yPos;
 function yScroll(){
-  nagbar = document.getElementById('nagbar', 'nagbar2');
+  nagbar = document.getElementById('nagbar');
   yPos = window.pageYOffset; 
-  if(yPos > 30){
+  if(yPos > 250){
     nagbar.style.height = "60px";
     nagbar.style.paddingTop = "0px";
-    nagbar.style.backgroudColor = "#265D6A";
+    nagbar.style.background = "#232a3f";
+    //nagbar.style.opacity = '0.5';
   } else {
     nagbar.style.height = "100px";
     nagbar.style.paddingTop = "20px";
+    nagbar.style.background = "transparent";
   }
 }
 window.addEventListener("scroll", yScroll);
@@ -35,3 +38,6 @@ window.addEventListener("load", function(){
   var preloader = document.getElementById("preloader");
   document.body.removeChild(preloader);
 });
+
+
+
