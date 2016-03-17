@@ -39,5 +39,17 @@ window.addEventListener("load", function(){
   document.body.removeChild(preloader);
 });
 
+$(document).ready(function(){
+  $('.first-serve').click(function(){
+    $('#title-wrapper1').show();
+
+  });
+   $('#title-wrapper2').click(function(){
+    $(this).fadeToggle();
+  });
+    $('#title-wrapper3').click(function(){
+    $(this).fadeToggle();
+  });
+});
 
 
