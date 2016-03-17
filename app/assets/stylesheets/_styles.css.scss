@@ -256,7 +256,7 @@ button#vbtn:hover{
   border-left: 1px solid;
   border-color: $primary-color;
 }
-@media (max-width: 6 80px){
+@media (max-width: 680px){
   #hero-text {
     border-left: 0px;
   }
@@ -296,13 +296,21 @@ button#vbtn:hover{
   height: 800px;
   padding: 0px;
   margin: 0px;
+  .container {
+    h3 {
+      color: #fff;
+      font-family: Open Sans;
+      font-height: 42px;
+      font-size: 42pt;
+    }
+    h3:hover {
+      background-color: #000;
+      color: red;
+      transition: 1s;
+    }
+  }
 }
-.parallax-container h3{
-  color: #fff;
-  font-family: Open Sans;
-  font-height: 42px;
-  font-size: 42pt;
-}
+
 #content-wrapper{
   position: absolute;
   top: 0;
@@ -612,7 +620,10 @@ section {
 
 }
 .service-section {
-     h1{
+    h6 {
+      color: #CDCACA;
+    }
+    h1{
       color: #fff;
       font-variant: bolder;
       font-weight: 800;
@@ -622,7 +633,7 @@ section {
       //padding: 30%;
       -webkit-align-content: center;
       text-align: center;
-      transition: font-size 1s;
+      transition: font-size 0.5s;
     }
     //h1:hover{
      // font-size: 36px;
@@ -635,19 +646,38 @@ section {
     min-width: 33.3%;
     height: 500px;
     #title-wrapper1 {
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: rgba(0, 0, 0, 0.5);
       width: 100%;
       height: 500px;
       text-align: center;
       padding-top: 180px;
     }
     #title-wrapper1:hover {
-      visibility: hidden;
-      background-color: red;
+      background-color: rgba(39, 88, 107, 0.9);
       width: 100%;
       height: 500px;
       text-align: center;
       padding-top: 180px;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+
+      h1 {
+        color: $h-color;
+        font-size: 46px;
+        font-weight: 800;
+        letter-spacing: 3px;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        border: 5px;
+        border-color: red;
+      }
+      h6 {
+        color: #fff;
+        font-weight: 400;
+        font-size: 16px;
+        -webkit-transition: 0.5s;
+        transition: 0.5s
+      }
     }
   }
   .second-serve {
@@ -657,11 +687,35 @@ section {
     width: 33.3%;
     height: 500px;
     #title-wrapper2 {
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: rgba(0, 0, 0, 0.5);
       width: 100%;
       height: 500px;
       text-align: center;
       padding-top: 180px;
+    }
+    #title-wrapper2:hover {
+      background-color: rgba(39, 88, 107, 0.9);
+      width: 100%;
+      height: 500px;
+      text-align: center;
+      padding-top: 180px;
+      -webkit-transition: 0.5s;
+      transition: 1s;
+      h1 {
+        color: $h-color;
+        font-size: 46px;
+        font-weight: 800;
+        letter-spacing: 3px;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+      }
+      h6 {
+        color: #fff;
+        font-weight: 400;
+        font-size: 16px;
+        -webkit-transition: 0.5s;
+        transition: 0.5s
+      }
     }
   }
   .third-serve {
@@ -671,11 +725,35 @@ section {
     width: 33.3%;
     height: 500px;
     #title-wrapper3 {
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: rgba(0, 0, 0, 0.5);
       width: 100%;
       height: 500px;
       text-align: center;
       padding-top: 180px;
+    }
+    #title-wrapper3:hover {
+      background-color: rgba(39, 88, 107, 0.9);
+      width: 100%;
+      height: 500px;
+      text-align: center;
+      padding-top: 180px;
+      -webkit-transition: 0.5s;
+      transition: 1s;
+      h1 {
+        color: $h-color;
+        font-size: 46px;
+        font-weight: 800;
+        letter-spacing: 3px;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+      }
+      h6 {
+        color: #fff;
+        font-weight: 400;
+        font-size: 16px;
+        -webkit-transition: 0.5s;
+        transition: 0.5s
+      }
     }
   }
 }
