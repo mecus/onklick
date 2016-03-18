@@ -780,7 +780,8 @@ section {
 .web-wrapper {
   .web-inner {
     background-image: url('bg-company.jpg');
-    background-position: relative;
+    //background-position: fixed;
+    position: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
@@ -791,11 +792,16 @@ section {
   .text-caption {
     padding-top: 200px;
     h1 {
+      color: #fff;
       font-size: 56px;
       font-weight: 800;
     }
     hr {
       width: 200px;
     }
+  }
+  .page-content {
+    position: relative;
+    z-index: -1000;
   }
 }
