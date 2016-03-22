@@ -17,6 +17,7 @@
 //= require turbolinks
 
 
+
 var nagbar, yPos;
 function yScroll(){
   nagbar = document.getElementById('nagbar');
