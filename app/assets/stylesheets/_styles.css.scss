@@ -173,6 +173,30 @@ h1 {
   border: 1px solid #fff;
   border-radius: 0%;
 }
+.call {
+  width: 100px;
+  height: 60px;
+}
+.sidebar-nav {
+  .first {
+    background-color: red;
+  }
+  .second {
+    background-color: green;
+  }
+  .third {
+    background-color: blue;
+  }
+  .forth {
+    background-color: pink;
+  }
+  .fifth {
+    background-color: black;
+  }
+  .sixth {
+    background-color: yellow;
+  }
+}
 #header{
   
   height: 800px;
