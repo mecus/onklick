@@ -550,7 +550,8 @@ button#vbtn:hover{
   .process-wrapper {
     #sign-up, #research, #design, #build, #launch, #support {
       padding: 30px 0px;
-      height: 200px;
+      height: 180px;
+      width: 180px;
 
       h2 {
         padding-bottom: 15px;
@@ -558,18 +559,18 @@ button#vbtn:hover{
       }
     }
    
-    height: 200px;
+    //height: 200px;
     i {
       font-size: 38px;
       color: $h-color;
       text-align: center;
     }
-   #sign-up:hover{ background-color: #27586B; color: #fff; }
-   #research:hover{ background-color: #27586B; color: #fff; } 
-   #design:hover{ background-color: #27586B; color: #fff; } 
-   #build:hover{ background-color: #27586B; color: #fff; } 
-   #launch:hover{ background-color: #27586B; color: #fff; } 
-   #support:hover{ background-color: #27586B; color: #fff; }  
+   #sign-up:hover{ background-color: #27586B; color: #fff; border: 5px; border-radius: 50%; }
+   #research:hover{ background-color: #27586B; color: #fff; border: 5px; border-radius: 50%; } 
+   #design:hover{ background-color: #27586B; color: #fff; border: 5px; border-radius: 50%; } 
+   #build:hover{ background-color: #27586B; color: #fff; border: 5px; border-radius: 50%; } 
+   #launch:hover{ background-color: #27586B; color: #fff; border: 5px; border-radius: 50%; } 
+   #support:hover{ background-color: #27586B; color: #fff; border: 5px; border-radius: 50%; }  
   }
   .process-header {
     padding: 50px 0px;
