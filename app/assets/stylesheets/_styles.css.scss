@@ -125,11 +125,16 @@ div#preloader > div#preload{
   padding-right: 20px;
   transition: height 0.3s linear 0s, padding 0.3s linear 0s;
   box-shadow: none;
+  //position: fixed;
+  //z-index: 1;
 }
 #page-top{
    background-color: transparent !important;
 }
-
+// Navigation force 0 --bootstrap--
+.navbar-fixed {
+  height: 0; 
+}
 .nav-wrapper{
 	padding-left: 30px;
 	padding-right: 50px;
@@ -781,13 +786,14 @@ section {
   .web-inner {
     background-image: url('bg-company.jpg');
     //background-position: fixed;
-    position: fixed;
+    //position: absolute !important;
     background-repeat: no-repeat;
-    background-size: cover;
+    //background-size: cover;
     height: 600px;
     width: 100%;
+    left: 0;
     top: 0px;
-    z-index: -1000;
+    z-index: 1;
   }
   .text-caption {
     padding-top: 200px;
@@ -800,8 +806,6 @@ section {
       width: 200px;
     }
   }
-  .page-content {
-    position: relative;
-    z-index: -1000;
-  }
 }
+
+
