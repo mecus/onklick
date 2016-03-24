@@ -1,0 +1,75 @@
+#page-top.navbar-fixed{"data-spy" => "scroll"}
+  %nav#nagbar{:role => "navigation"}
+    %a.button-collapse.show-on-large{"data-activates" => "slide-out", :href => "#"}
+      %i.material-icons#menu-icon menu
+    .nav-wrapper.page-scroll
+      %a.brand-logo{:href => "/"}
+        %img{:src => "/assets/header_logo_white.png"}/
+      %ul.right
+        %li.hidden
+          %a.page-scroll{:href => "#page-top"}
+        %li
+          %a.tooltipped.calls{"data-delay" => "50", "data-position" => "bottom", "data-tooltip" => "Tel: 020 7635 2679, Mob: 07853 292 983"}
+            %i.large.material-icons call
+        %li
+          %a.tooltipped.calls{"data-delay" => "50", "data-position" => "bottom", "data-tooltip" => "Email Us: emeka@miscotech.co.uk"}
+            %i.large.material-icons email
+        %li
+          %a.page-scroll{:href => "#services"}
+            %i.large.material-icons search
+      %ul#slide-out.side-nav
+        .chip-contianer.center-align
+          %a.brand-logo{:href => "/"}
+            %img{:src => "/assets/header_logo_white.png"}
+        .sidebar-nav.center
+          %li.hidden
+            %a.page-scroll{:href => "#page-top"}
+          %li.first
+            %a.page-scroll{:href => "#company"} COMPANY
+          %li.second
+            %a.page-scroll{:href => "#services"} SERVICES
+          %li.third
+            %a.page-scroll{:href => "#contact-f"} CONTACT
+          %li.forth
+            %a.page-scroll{:href => "#company"} COMPANY
+          %li.fifth
+            %a.page-scroll{:href => "#services"} SERVICES
+          %li.sixth
+            %a.page-scroll{:href => "#contact-f"} CONTACT
+        / Switch
+
+:javascript
+  $(".button-collapse").sideNav();
+  
+    $(window).scroll(function() {
+      if ($(".navbar").offset().top > 50) {
+          $(".navbar-fixed-top").addClass("top-nav-collapse");
+      } else {
+          $(".navbar-fixed-top").removeClass("top-nav-collapse");
+      }
+  });
+  
+  $(function() {
+      $('a.page-scroll').bind('click', function(event) {
+          var $anchor = $(this);
+          $('html, body').stop().animate({
+              scrollTop: $($anchor.attr('href')).offset().top
+          }, 1500, 'easeInOutExpo');
+          event.preventDefault();
+      });
+  });
+
+   $(document).ready(function(){
+    $('.tooltipped').tooltip({delay: 50});
+  });
+  
+  $("#menu-icon").mouseUp(function(){
+    $("#menu-icon").css( "color", "red" );
+  });
+      //$('.button-collapse').sideNav({
+       // menuWidth: 200,
+        //menuHeight: 300, // Default is 240
+       // edge: 'right', // Choose the horizontal origin
+       // closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+     // }
+   // );

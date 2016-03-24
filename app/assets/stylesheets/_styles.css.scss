@@ -118,6 +118,9 @@ div#preloader > div#preload{
 }
 
 #nagbar{
+  a:hover {
+    text-decoration: none;
+  }
   background-color: transparent;
   height: 100px;
   padding-top: 20px;
