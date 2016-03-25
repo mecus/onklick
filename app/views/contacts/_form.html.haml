@@ -1,6 +1,6 @@
 #contact-form.container#contact-f
   #contact
-    %h1.center-align SEND US MESSAGE
+    %h1.center-align GET IN TOUCH
     %p.notice= notice
   = form_for :contact, url: contacts_path, remote: true do |f|
     - if @contact.errors.any?
