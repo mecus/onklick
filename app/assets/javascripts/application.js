@@ -22,10 +22,10 @@ var nagbar, yPos;
 function yScroll(){
   nagbar = document.getElementById('nagbar');
   yPos = window.pageYOffset; 
-  if(yPos > 250){
+  if(yPos > 700){
     nagbar.style.height = "60px";
     nagbar.style.paddingTop = "0px";
-    nagbar.style.background = "#232a3f";
+    nagbar.style.background = "rgba(0,0,0, 0.4)";
     //nagbar.style.opacity = '0.5';
   } else {
     nagbar.style.height = "100px";

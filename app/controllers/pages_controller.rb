@@ -3,7 +3,7 @@ class PagesController < ApplicationController
   	@contact = Contact.new
   end
 
-  def services
+  def marketing
   end
 
   def company

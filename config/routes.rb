@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :contacts
   root 'pages#home'
 
-  get 'pages/services'
+  get 'pages/marketing'
 
   get 'pages/company'
 
