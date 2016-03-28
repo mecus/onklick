@@ -9,7 +9,7 @@
         We beautifully design website that are user friendly and easy to convert visitors into customers, Creating website that stands out from your competitors helps convince your potential customers to do business with you.
         %br
           %br
-            = link_to "read more", pages_webdesign_path, class: "waves-effect, waves-light, btn"
+            = link_to "read more", web_path, class: "waves-effect, waves-light, btn"
 %section#section-1.row
   .col.s12.m7.l6.hero-text.dots
     %h4 BESPOKE, MOBILE FRIENDLY DESIGN
@@ -21,7 +21,8 @@
       All our websites are responsive (mobile friendly). Responsive websites allow a site to adapt to different screen sizes, so you can offer visitors the best possible experience.
   .col.s12.m5.l6.hero-image-bespoke
 // Holding Container for Services
-= render 'partials/services'
+#service-container
+  = render 'partials/services'
 
 // Hosting Service Section Starts here
 .section.scrollspy
@@ -42,7 +43,13 @@
 // Parallax container stars here
 = render 'partials/parallax'
 = render 'partials/process'
+
+/ %a.waves-effect.waves-light.btn.modal-trigger{:href => "#modal1"} Modal
+/ / Modal Structure
+/ #modal1.modal.modal-fixed-footer.model-form
+
 = render 'contacts/form'
+
 = render 'partials/company_image'
 
 // Section for Javascript
@@ -50,3 +57,16 @@
 :javascript
   //$('#textarea1').val('Write Your Message here');
    	$('#textarea1').trigger('autoresize');
+
+
+  var options = [
+    {selector: '.hero-inner1-1', offset: 500, callback: 'Materialize.showStaggeredList(".hero-inner1-1")' },
+    {selector: '.hero-image-hosting', offset: 600, callback: 'Materialize.fadeInImage(".hero-image-hosting")' },
+    {selector: '#service-container', offset: 800, callback: 'Materialize.fadeInImage("#service-container")' }
+  ];
+  Materialize.scrollFire(options);
+  $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  });
+     

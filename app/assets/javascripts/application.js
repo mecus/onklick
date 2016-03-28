@@ -40,8 +40,12 @@ window.addEventListener("load", function(){
   document.body.removeChild(preloader);
 });
 
-
-
-
-
+$(document).ready(function(){
+  $("#inner-header img").hide();
+  $("#inner-header img").show(1000);
+});
+$(document).ready(function(){
+  $("#inner-header h1").hide();
+  $("#inner-header h1").slideToggle(1200); 
+});
 
