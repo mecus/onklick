@@ -15,6 +15,16 @@ html, body{
   height: 100%;
   -webkit-font-smoothing: antialiased;
 }
+#service-container{opacity: 0;}
+#company-image{opacity: 0;}
+#process{opacity: 0;}
+#parallax{opacity: 0;}
+#contacts{opacity: 0;}
+#welcome{opacity: 0;}
+#section-1{opacity: 0;}
+.call-to-action{opacity: 0;}
+.features{opacity: 0;}
+.design-types{opacity: 0;}
 html, 
 body, 
 div, 
@@ -432,6 +442,7 @@ button#vbtn:hover{
   background-color: #000;
   background-repeat: no-repeat;
   background-position: center;
+  opacity: 0;
 }
 .hero-inner2 {
   height: 600px;
@@ -459,6 +470,7 @@ button#vbtn:hover{
   padding-bottom: 0rem;
 }
 .hero-inner1-1{
+
   ul {
     li {
       padding: 0px 50px 0px 50px;
@@ -483,6 +495,7 @@ button#vbtn:hover{
     color: #fff;
     opacity: 0.8;
   }
+opacity: 0;
 }
 #footer-nav{
   background-color: rgba(0, 0, 0, 0.26);
@@ -495,19 +508,31 @@ button#vbtn:hover{
     color: #fff;
     .top-page {
       .link-top {
+        // padding-top: 1px;
+        // padding-bottom: 1px;
         width: 40px;
         height: 40px;
         float: right;
-          a {
-     
-        display: inline-block;
-        color: #fff;
-        text-decoration: none;
-        text-transform: uppercase;
-        opacity: 0.5;
+        a {
+          border: 1px solid;
+          border-color: #fff;
+          padding: 2px 5px;
+          border-radius: 5px;
+          display: inline-block;
+          color: #fff;
+          text-decoration: none;
+          text-transform: uppercase;
+          opacity: 0.5;
         }
         a:hover {
-          color: grey;
+          background-color: #fff;
+          border: 1px solid;
+          border-color: red;
+          padding: 2px 5px;
+          border-radius: 5px;
+          transition: 0.5s;
+          color: red;
+          opacity: 0.5;
         }
       }
     }
@@ -1170,6 +1195,21 @@ section {
         color: #fff;
       }
     }
+  }
+}
+.marketing-style {
+    background-color: grey;
+    padding: 50px 0px;
+  .style-container {
+    align-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    i {font-size: 110px; color: #fff; padding-top: 50px;}
+    //padding-top: 120px;
+    .email-marketing{height: 200px; width: 200px; text-align: center; border: 2px solid; border-color: #fff; margin-left: 30px; border-radius: 50%;}
+    .twitter {height: 200px; width: 200px; text-align: center; border: 2px solid; border-color: #fff; margin-left: 30px; border-radius: 50%;}
+    .facebook {height: 200px; width: 200px; text-align: center; border: 2px solid; border-color: #fff; margin-left: 30px; border-radius: 50%;}
+    .linkedin {height: 200px; width: 200px; text-align: center; border: 2px solid; border-color: #fff; margin-left: 30px; border-radius: 50%;}
   }
 }
 

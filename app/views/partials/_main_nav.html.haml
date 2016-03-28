@@ -27,15 +27,24 @@
           %li.first
             %a.page-scroll{:href => "#company"} COMPANY
           %li.second
+            / %a.dropdown-button{"data-activates" => "dropdown1", :href => "#"} SERVICES
+            / %ul#dropdown1.dropdown-content
+            /   %li
+            /     %a{:href => "#!"} WEB DESIGN
+            /   %li
+            /     %a{:href => "#!"} MARKETING
+            /   %li.divider
+            /   %li
+            /     %a{:href => "#!"} BRANDING
             %a.page-scroll{:href => "#services"} SERVICES
           %li.third
             %a.page-scroll{:href => "#contact-f"} CONTACT
-          / %li.forth
-          /   %a.page-scroll{:href => "#company"} COMPANY
-          / %li.fifth
-          /   %a.page-scroll{:href => "#services"} SERVICES
-          / %li.sixth
-          /   %a.page-scroll{:href => "#contact-f"} CONTACT
+          %li.forth
+            %a.page-scroll{:href => "/web"} WEB DESIGN
+          %li.fifth
+            %a.page-scroll{:href => "/marketing"} MARKETING
+          %li.sixth
+            %a.page-scroll{:href => "/barnding"} BRANDING
         / Switch
 
 :javascript
@@ -75,3 +84,14 @@
        // closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
      // }
    // );
+  // $('.dropdown-button').dropdown({
+  //   inDuration: 300,
+  //   outDuration: 225,
+  //   constrain_width: false, // Does not change width of dropdown to that of the activator
+  //   hover: true, // Activate on hover
+  //   gutter: 0, // Spacing from edge
+  //   belowOrigin: true, // Displays dropdown below the button
+  //   alignment: 'right' // Displays dropdown with edge aligned to the left of button
+  //   }
+  // );
+     

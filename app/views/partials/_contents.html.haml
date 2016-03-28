@@ -41,16 +41,18 @@
           %li Technical support
           %li Optional marketing help available
 // Parallax container stars here
-= render 'partials/parallax'
-= render 'partials/process'
+#parallax
+  = render 'partials/parallax'
+#process
+  = render 'partials/process'
 
 / %a.waves-effect.waves-light.btn.modal-trigger{:href => "#modal1"} Modal
 / / Modal Structure
 / #modal1.modal.modal-fixed-footer.model-form
-
-= render 'contacts/form'
-
-= render 'partials/company_image'
+#contacts
+  = render 'contacts/form'
+#company-image
+  = render 'partials/company_image'
 
 // Section for Javascript
 
@@ -60,9 +62,15 @@
 
 
   var options = [
-    {selector: '.hero-inner1-1', offset: 500, callback: 'Materialize.showStaggeredList(".hero-inner1-1")' },
+    {selector: '#welcome', offset: 300, callback: 'Materialize.fadeInImage("#welcome")' },
+    {selector: '#section-1', offset: 500, callback: 'Materialize.fadeInImage("#section-1")' },
+    {selector: '.hero-inner1-1', offset: 600, callback: 'Materialize.fadeInImage(".hero-inner1-1")' },
     {selector: '.hero-image-hosting', offset: 600, callback: 'Materialize.fadeInImage(".hero-image-hosting")' },
-    {selector: '#service-container', offset: 800, callback: 'Materialize.fadeInImage("#service-container")' }
+    {selector: '#service-container', offset: 600, callback: 'Materialize.fadeInImage("#service-container")' },
+    {selector: '#parallax', offset: 600, callback: 'Materialize.fadeInImage("#parallax")' },
+    {selector: '#process', offset: 200, callback: 'Materialize.fadeInImage("#process")' },
+    {selector: '#contacts', offset: 400, callback: 'Materialize.fadeInImage("#contacts")' },
+    {selector: '#company-image', offset: 600, callback: 'Materialize.fadeInImage("#company-image")' }
   ];
   Materialize.scrollFire(options);
   $(document).ready(function(){
