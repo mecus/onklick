@@ -1190,26 +1190,51 @@ section {
     .text-caption {
       h1 {
         color: #fff;
+        text-transform: uppercase;
+        font-size: 26px;
       }
       p { 
         color: #fff;
+      }
+      hr {
+        width: 150px;
       }
     }
   }
 }
 .marketing-style {
-    background-color: grey;
+    //background-color: grey;
     padding: 50px 0px;
+    text-align: center;
   .style-container {
-    align-content: center;
-    padding-left: 50px;
-    padding-right: 50px;
-    i {font-size: 110px; color: #fff; padding-top: 50px;}
+    text-align: center;
+    // padding-left: 100px;
+    // padding-right: 100px;
     //padding-top: 120px;
-    .email-marketing{height: 200px; width: 200px; text-align: center; border: 2px solid; border-color: #fff; margin-left: 30px; border-radius: 50%;}
-    .twitter {height: 200px; width: 200px; text-align: center; border: 2px solid; border-color: #fff; margin-left: 30px; border-radius: 50%;}
-    .facebook {height: 200px; width: 200px; text-align: center; border: 2px solid; border-color: #fff; margin-left: 30px; border-radius: 50%;}
-    .linkedin {height: 200px; width: 200px; text-align: center; border: 2px solid; border-color: #fff; margin-left: 30px; border-radius: 50%;}
+    .email-marketing{
+      i {font-size: 90px; color: #fff; }
+      p {text-overflow: hidden; color: #fff; }
+      //height: 200px; width: 200px; text-align: center; border: 2px solid; border-color: #fff; margin-left: 30px; border-radius: 50%;
+      background-color: blue;
+    }
+    .twitter {
+      i {font-size: 90px; color: #fff; }
+      p {text-overflow: hidden; color: #fff; }
+      //height: 200px; width: 200px; text-align: center; border: 2px solid; border-color: #fff; margin-left: 30px; border-radius: 50%;
+      background-color: red;
+    }
+    .facebook {
+      i {font-size: 90px; color: #fff; }
+      p {text-overflow: hidden; color: #fff; }
+      //height: 200px; width: 200px; text-align: center; border: 2px solid; border-color: #fff; margin-left: 30px; border-radius: 50%;
+      background-color: brown;
+    }
+    .linkedin {
+      i {font-size: 90px; color: #fff; }
+      p {text-overflow: hidden; color: #fff; }
+      //height: 200px; width: 200px; text-align: center; border: 2px solid; border-color: #fff; margin-left: 30px; border-radius: 50%;
+      background-color: black;
+    }
   }
 }
 
