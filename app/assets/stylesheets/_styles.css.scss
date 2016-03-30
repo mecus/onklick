@@ -616,12 +616,12 @@ opacity: 0;
       color: $h-color;
       text-align: center;
     }
-   #sign-up:hover{ background: transparent; color: red; border: 1px solid; border-radius: 50%; border-color: red; text-transform: uppercase; transition: 0.5s; }
-   #research:hover{ background: transparent; color: brown; border: 1px solid; border-radius: 50%; border-color: brown; text-transform: uppercase; transition: 0.5s;} 
-   #design:hover{ background: transparent; color: green; border: 1px solid; border-radius: 50%; border-color: green; text-transform: uppercase; transition: 0.5s;} 
-   #build:hover{ background: transparent; color: blue; border: 1px solid; border-radius: 50%; border-color: blue; text-transform: uppercase; transition: 0.5s;} 
-   #launch:hover{ background: transparent; color: grey; border: 1px solid; border-radius: 50%; border-color: grey; text-transform: uppercase; transition: 0.5s;} 
-   #support:hover{ background: transparent; color: black; border: 1px solid; border-radius: 50%; border-color: black; text-transform: uppercase; transition: 0.5s;}  
+   #sign-up:hover{ background-image: url('sign-up'); background-position: fixed; background-size: cover; color: #fff; border: 1px solid; border-radius: 50%; border-color: red; text-transform: uppercase; transition: 0.5s; }
+   #research:hover{ background-image: url('Research'); background-position: fixed; background-size: cover; color:  #2274A5; border: 1px solid; border-radius: 50%; border-color: brown; text-transform: uppercase; transition: 0.5s;} 
+   #design:hover{ background-image: url('process-design'); background-position: fixed; background-size: cover; color:  #fff; border: 1px solid; border-radius: 50%; border-color: green; text-transform: uppercase; transition: 0.5s;} 
+   #build:hover{ background-image: url('build-process'); background-position: fixed; background-size: cover; color: #FFBF00; border: 1px solid; border-radius: 50%; border-color: blue; text-transform: uppercase; transition: 0.5s;} 
+   #launch:hover{ background-image: url('launch-process'); background-position: fixed; background-size: cover; color: #fff; border: 1px solid; border-radius: 50%; border-color: grey; text-transform: uppercase; transition: 0.5s;} 
+   #support:hover{ background-image: url('support-process'); background-position: fixed; background-size: cover; color:  #E83F6F; border: 1px solid; border-radius: 50%; border-color: black; text-transform: uppercase; transition: 0.5s;}  
   }
   .process-header {
     padding: 50px 0px;
@@ -743,7 +743,7 @@ section {
       -webkit-transition: 0.5s;
       transition: 0.5s;
       .btn {
-        background-color: red;
+        background-color: #E83F6F;
         border: 1px solid;
         border-color: #fff;
         transition: 1s;
@@ -790,7 +790,7 @@ section {
       -webkit-transition: 0.5s;
       transition: 0.5s;
       .btn {
-        background-color: red;
+        background-color: #E83F6F;
         border: 1px solid;
         border-color: #fff;
         transition: 1s;
@@ -834,7 +834,7 @@ section {
       -webkit-transition: 0.5s;
       transition: 0.5s;
       .btn {
-        background-color: red;
+        background-color: #E83F6F;
         border: 1px solid;
         border-color: #fff;
         transition: 1s;
@@ -899,12 +899,12 @@ section {
         background-color: rgba(0, 0, 0, 0.7);
       }
     }
-    .dot-cover {
-      background-image: url('dot.png');
-      background-repeat: repeat;
-      height: 600px;
-     // opacity: 0.5;
-    }
+    // .dot-cover {
+    //   background-image: url('dot.png');
+    //   background-repeat: repeat;
+    //   height: 600px;
+    //  // opacity: 0.5;
+    // }
   }
   .text-caption {
     padding-top: 200px;
@@ -1210,32 +1210,32 @@ section {
     text-align: center;
   .style-container {
     text-align: center;
-    // padding-left: 100px;
+    padding-left: 100px;
     // padding-right: 100px;
     //padding-top: 120px;
     .email-marketing{
-      i {font-size: 90px; color: #fff; }
-      p {text-overflow: hidden; color: #fff; }
-      //height: 200px; width: 200px; text-align: center; border: 2px solid; border-color: #fff; margin-left: 30px; border-radius: 50%;
-      background-color: blue;
+      i {font-size: 90px; color: #fff; padding-top: 20px; }
+      p {text-overflow: hidden; color: #fff; padding: 20px;}
+      height: 200px; width: 200px; text-align: center; border: 2px solid; border-color: #fff; margin-left: 30px; border-radius: 20%;
+      background-color: #02C39A;
     }
     .twitter {
-      i {font-size: 90px; color: #fff; }
-      p {text-overflow: hidden; color: #fff; }
-      //height: 200px; width: 200px; text-align: center; border: 2px solid; border-color: #fff; margin-left: 30px; border-radius: 50%;
-      background-color: red;
+      i {font-size: 90px; color: #fff; padding-top: 20px;}
+      p {text-overflow: hidden; color: #fff; padding: 20px;}
+      height: 200px; width: 200px; text-align: center; border: 2px solid; border-color: #fff; margin-left: 30px; border-radius: 20%;
+      background-color: #06AED5;
     }
     .facebook {
-      i {font-size: 90px; color: #fff; }
-      p {text-overflow: hidden; color: #fff; }
-      //height: 200px; width: 200px; text-align: center; border: 2px solid; border-color: #fff; margin-left: 30px; border-radius: 50%;
-      background-color: brown;
+      i {font-size: 90px; color: #fff; padding-top: 20px;}
+      p {text-overflow: hidden; color: #fff; padding: 20px;}
+      height: 200px; width: 200px; text-align: center; border: 2px solid; border-color: #fff; margin-left: 30px; border-radius: 20%;
+      background-color: #1B98E0;
     }
     .linkedin {
-      i {font-size: 90px; color: #fff; }
-      p {text-overflow: hidden; color: #fff; }
-      //height: 200px; width: 200px; text-align: center; border: 2px solid; border-color: #fff; margin-left: 30px; border-radius: 50%;
-      background-color: black;
+      i {font-size: 90px; color: #fff; padding-top: 20px;}
+      p {text-overflow: hidden; color: #fff; padding: 20px;}
+      height: 200px; width: 200px; text-align: center; border: 2px solid; border-color: #fff; margin-left: 30px; border-radius: 20%;
+      background-color: #083D77;
     }
   }
 }
