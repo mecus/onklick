@@ -1,33 +1,65 @@
-#contact-form.container
-  #contact
-    %h1.center-align SEND US MESSAGE
-  %form.col.s12
-    .row
-      .input-field.col.s6
-        %input#first_name.validate{:type => "text"}/
-        %label{:for => "first_name"} First Name
-      .input-field.col.s6
-        %input#last_name.validate{:type => "text"}/
-        %label{:for => "last_name"} Last Name
-    %br/
-    .row
-      .input-field.col.s6
-        %input#email.validate{:type => "email"}/
-        %label{:for => "email"} Email
-      .input-field.col.s6
-        %input#telephone.validate{:type => "text"}/
-        %label{:for => "telephone"} Telephone
-      %br/
-      .row
-        .input-field.col.s12
-          %textarea#textarea1.materialize-textarea
-          %label{:for => "textarea1"} Message
-      %br/
-      %button.btn.waves-effect.waves-light{:name => "action", :type => "submit"}
-        Send Message
-        %i.material-icons.right send
-    %br/
-    %br/
-:javascript
-  //$('#textarea1').val('Write Your Message here');
-   	$('#textarea1').trigger('autoresize');
+.our-contact.row
+  .contact-us
+    .call-us.col.s12.m6.l3
+      .cover-blind
+        %h1.text-center THESE ARE THE HOLDERS
+    .email-us.col.s12.m6.l3
+      .cover-blind
+        %h1.text-center THESE ARE THE HOLDERS
+    .tweet-us.col.s12.m6.l3
+      .cover-blind
+        %h1.text-center THESE ARE THE HOLDERS
+    .facebook.col.s12.m6.l3
+      .cover-blind
+        %h1.text-center THESE ARE THE HOLDERS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/ #contact-form.container
+/   #contact
+/     %h1.center-align SEND US MESSAGE
+/   %form.col.s12
+/     .row
+/       .input-field.col.s6
+/         %input#first_name.validate{:type => "text"}/
+/         %label{:for => "first_name"} First Name
+/       .input-field.col.s6
+/         %input#last_name.validate{:type => "text"}/
+/         %label{:for => "last_name"} Last Name
+/     %br/
+/     .row
+/       .input-field.col.s6
+/         %input#email.validate{:type => "email"}/
+/         %label{:for => "email"} Email
+/       .input-field.col.s6
+/         %input#telephone.validate{:type => "text"}/
+/         %label{:for => "telephone"} Telephone
+/       %br/
+/       .row
+/         .input-field.col.s12
+/           %textarea#textarea1.materialize-textarea
+/           %label{:for => "textarea1"} Message
+/       %br/
+/       %button.btn.waves-effect.waves-light{:name => "action", :type => "submit"}
+/         Send Message
+/         %i.material-icons.right send
+/     %br/
+/     %br/
+/ :javascript
+/   //$('#textarea1').val('Write Your Message here');
+/    	$('#textarea1').trigger('autoresize');
