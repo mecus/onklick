@@ -175,7 +175,9 @@ h1 {
   text-decoration: none !important;
   background: none;
   color: green;
+  
 }
+.nav-wrapper ul li a:hover{border-bottom: 1px solid; border-color: red; transition: 1s; }
 .brand-logo img{
   width: 200px;
   height: 30px;
