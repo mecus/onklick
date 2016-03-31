@@ -49,7 +49,11 @@ $(document).ready(function(){
   $("#inner-header h1").slideToggle(1200); 
 });
 
-
+$(function(){
+  $(".form-button").click(function(){
+    $("#contact-f").slideToggle(300);
+  })
+});
 
 
 
