@@ -13,6 +13,6 @@ class PagesController < ApplicationController
   end
   
   def webdesign
-  	
+  	@contact = Contact.new
   end
 end

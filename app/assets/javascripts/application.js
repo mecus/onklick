@@ -52,7 +52,17 @@ $(document).ready(function(){
 $(function(){
   $(".form-button").click(function(){
     $("#contact-f").slideToggle(300);
-  })
+    $(".caret-pop").slideToggle(300);
+  });
+  // $(".form-button").hover(function(){
+  //   $(".form-button").css("")
+  // })
+  $(function(){
+    $(".solid-button").click(function(){
+      $("#contact-f").slideToggle(300);
+      $(".caret-pop").slideToggle(300);
+    });
+  });
 });
 
 
