@@ -53,6 +53,7 @@ $(function(){
   $(".form-button").click(function(){
     $("#contact-f").slideToggle(300);
     $(".caret-pop").slideToggle(300);
+    // preventDefaul();
   });
   // $(".form-button").hover(function(){
   //   $(".form-button").css("")
@@ -61,9 +62,32 @@ $(function(){
     $(".solid-button").click(function(){
       $("#contact-f").slideToggle(300);
       $(".caret-pop").slideToggle(300);
+      // preventDefaul();
     });
   });
 });
+
+// $(function(){
+//   $(".email-marketing").on('click', function(){
+//     $("#email").slideToggle(500);
+//   });
+//   $(".twitter").on('click', function(){
+//     $("#twitter").slideToggle(500);
+//   });
+//    $(".facebook").on('click', function(){
+//     $("#facebook").slideToggle(500);
+//   });
+//     $(".linkedin").on('click', function(){
+//     $("#linkedin").slideToggle(500);
+//   });
+// });
+
+
+
+
+
+
+
 
 
 
