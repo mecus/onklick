@@ -2,7 +2,7 @@
 %section#welcome.container
   %h4.center-align WE DESIGN WEBSITE THAT TELLS YOUR BUSINESS STORY
   .row
-    .col.s12.m7.l6
+    #hero-image.col.s12.m7.l6
       %img.responsive-img{:src => "/assets/devices.png"}
     #hero-text.col.s12.m5.l6
       %p.text-flow.center-align
@@ -20,6 +20,9 @@
       
       All our websites are responsive (mobile friendly). Responsive websites allow a site to adapt to different screen sizes, so you can offer visitors the best possible experience.
   .col.s12.m5.l6.hero-image-bespoke
+    .bespoke-pop
+      %h2.text-center Specially design for you
+      %p.text-center We make sure your website suite your business needs
 // Holding Container for Services
 #service-container
   = render 'partials/services'
@@ -29,6 +32,9 @@
   #cards.row
     %section#section-2.row
       .col.s12.m5.l6.hero-image-hosting
+        .hosting-pop
+          %h2.text-center Affordable Web and Email Hosting
+          %p.text-center we host our customer's web site with the best cloud service provider
       .col.s12.m7.l6.hero-inner1-1.dots
         %h4 HOSTING SOLUTION
         %p.text-flow

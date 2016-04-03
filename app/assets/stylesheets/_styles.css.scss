@@ -429,7 +429,15 @@ button#vbtn:hover{
   background-color: #000;
   background-repeat: no-repeat;
   background-position: center;
-
+}
+.bespoke-pop {
+  background-color: rgba(35,42,63, 0.9);
+  height: 600px;
+  width: 50%;
+  float: left;
+  display: none;
+  h2{color: #fff; margin-top: 70%; padding: 0px 20px; display: none;}
+  p{color: #00A896;}
 }
 .dots {
 //  background: url('dot-pattern.jpg');
@@ -446,6 +454,15 @@ button#vbtn:hover{
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0;
+  .hosting-pop {
+    background-color: rgba(0,0,0, 0.9);
+    height: 600px;
+    width: 50%;
+    float: right;
+    display: none;
+    h2{color: #fff; margin-top: 70%;}
+    p{color: #00A896;}
+  }
 }
 .hero-inner2 {
   height: 600px;
