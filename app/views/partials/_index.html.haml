@@ -1,68 +1,68 @@
-%body#page-top{"data-spy" => "scroll", "data-target" => ".navbar-fixed-top"}
-  / Navigation
-  %nav.navbar.navbar-default.navbar-fixed-top{:role => "navigation"}
-    .container
-      .navbar-header.page-scroll
-        %button.navbar-toggle{"data-target" => ".navbar-ex1-collapse", "data-toggle" => "collapse", :type => "button"}
-          %span.sr-only Toggle navigation
-          %span.icon-bar
-          %span.icon-bar
-          %span.icon-bar
-        %a.navbar-brand.page-scroll{:href => "#page-top"} Start Bootstrap
-      / Collect the nav links, forms, and other content for toggling
-      .collapse.navbar-collapse.navbar-ex1-collapse
-        %ul.nav.navbar-nav
-          / Hidden li included to remove active class from about link when scrolled up past about section
-          %li.hidden
-            %a.page-scroll{:href => "#page-top"}
-          %li
-            %a.page-scroll{:href => "#about"} About
-          %li
-            %a.page-scroll{:href => "#services"} Services
-          %li
-            %a.page-scroll{:href => "#contact"} Contact
-      / /.navbar-collapse
-    / /.container
-  / Intro Section
-  %section#intro.intro-section
-    .container
-      .row
-        .col-lg-12
-          %h1 Scrolling Nav
-          %p
-            %strong Usage Instructions:
-            Make sure to include the
-            = succeed "," do
-              %code scrolling-nav.js
-            = succeed "," do
-              %code jquery.easing.min.js
-            %code scrolling-nav.css
-            files. To make a link smooth scroll to another section on the page, give the link the
-            %code .page-scroll
-            class and set the link target to a corresponding ID on the page.
-          %a.btn.btn-default.page-scroll{:href => "#about"} Click Me to Scroll Down!
-  / About Section
-  %section#about.about-section
-    .container
-      .row
-        .col-lg-12
-          %h1 About Section
-  / Services Section
-  %section#services.services-section
-    .container
-      .row
-        .col-lg-12
-          %h1 Services Section
-  / Contact Section
-  %section#contact.contact-section
-    .container
-      .row
-        .col-lg-12
-          %h1 Contact Section
-  / jQuery
-  %script{:src => "js/jquery.js"}
-  / Bootstrap Core JavaScript
-  %script{:src => "js/bootstrap.min.js"}
-  / Scrolling Nav JavaScript
-  %script{:src => "js/jquery.easing.min.js"}
-  %script{:src => "js/scrolling-nav.js"}
+/ %body#page-top{"data-spy" => "scroll", "data-target" => ".navbar-fixed-top"}
+/   / Navigation
+/   %nav.navbar.navbar-default.navbar-fixed-top{:role => "navigation"}
+/     .container
+/       .navbar-header.page-scroll
+/         %button.navbar-toggle{"data-target" => ".navbar-ex1-collapse", "data-toggle" => "collapse", :type => "button"}
+/           %span.sr-only Toggle navigation
+/           %span.icon-bar
+/           %span.icon-bar
+/           %span.icon-bar
+/         %a.navbar-brand.page-scroll{:href => "#page-top"} Start Bootstrap
+/       / Collect the nav links, forms, and other content for toggling
+/       .collapse.navbar-collapse.navbar-ex1-collapse
+/         %ul.nav.navbar-nav
+/           / Hidden li included to remove active class from about link when scrolled up past about section
+/           %li.hidden
+/             %a.page-scroll{:href => "#page-top"}
+/           %li
+/             %a.page-scroll{:href => "#about"} About
+/           %li
+/             %a.page-scroll{:href => "#services"} Services
+/           %li
+/             %a.page-scroll{:href => "#contact"} Contact
+/       / /.navbar-collapse
+/     / /.container
+/   / Intro Section
+/   %section#intro.intro-section
+/     .container
+/       .row
+/         .col-lg-12
+/           %h1 Scrolling Nav
+/           %p
+/             %strong Usage Instructions:
+/             Make sure to include the
+/             = succeed "," do
+/               %code scrolling-nav.js
+/             = succeed "," do
+/               %code jquery.easing.min.js
+/             %code scrolling-nav.css
+/             files. To make a link smooth scroll to another section on the page, give the link the
+/             %code .page-scroll
+/             class and set the link target to a corresponding ID on the page.
+/           %a.btn.btn-default.page-scroll{:href => "#about"} Click Me to Scroll Down!
+/   / About Section
+/   %section#about.about-section
+/     .container
+/       .row
+/         .col-lg-12
+/           %h1 About Section
+/   / Services Section
+/   %section#services.services-section
+/     .container
+/       .row
+/         .col-lg-12
+/           %h1 Services Section
+/   / Contact Section
+/   %section#contact.contact-section
+/     .container
+/       .row
+/         .col-lg-12
+/           %h1 Contact Section
+/   / jQuery
+/   %script{:src => "js/jquery.js"}
+/   / Bootstrap Core JavaScript
+/   %script{:src => "js/bootstrap.min.js"}
+/   / Scrolling Nav JavaScript
+/   %script{:src => "js/jquery.easing.min.js"}
+/   %script{:src => "js/scrolling-nav.js"}
