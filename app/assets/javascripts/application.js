@@ -23,15 +23,17 @@ var nagbar, yPos;
 function yScroll(){
   nagbar = document.getElementById('nagbar');
   yPos = window.pageYOffset; 
-  if(yPos > 700){
+  if(yPos > 600){
     nagbar.style.height = "60px";
     nagbar.style.paddingTop = "0px";
     nagbar.style.background = "rgba(0,0,0, 0.4)";
+    $(".top-page").show();
     //nagbar.style.opacity = '0.5';
   } else {
     nagbar.style.height = "100px";
     nagbar.style.paddingTop = "20px";
     nagbar.style.background = "transparent";
+    $(".top-page").hide();
   }
 }
 window.addEventListener("scroll", yScroll);
@@ -41,13 +43,17 @@ window.addEventListener("load", function(){
   document.body.removeChild(preloader);
 });
 
-$(document).ready(function(){
+$(function(){
   $("#inner-header img").hide();
   $("#inner-header img").show(1000);
 });
-$(document).ready(function(){
+$(function(){
   $("#inner-header h1").hide();
-  $("#inner-header h1").slideToggle(1200); 
+  $("#inner-header h1").delay(600).animate({width: "show"}, 1200);
+  $("#inner-header hr").hide();
+  $("#inner-header a").hide();
+  $("#inner-header hr").delay(1600).animate({width: "show"}, 1000);
+  $("#inner-header a").delay(2000).animate({width: "show"}, 150);
 });
 
 $(function(){
