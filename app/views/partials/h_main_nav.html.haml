@@ -8,15 +8,15 @@
       %ul.right
         %li.hidden
           %a.page-scroll{:href => "#page-top"}
-        %li
+        %li.top
           /%a.tooltipped.calls{"data-delay" => "50", "data-position" => "bottom", "data-tooltip" => "Tel: 020 7635 2679, Mob: 07853 292 983"}
           %a{:onclick => "Materialize.toast('<h2><strong>Tel: 020 7635 2679, Mob: 07853 292 983</strong></h2>', 8000 )"}
             %i.large.material-icons call
-        %li
+        %li.top
           /%a.tooltipped.calls{"data-delay" => "50", "data-position" => "bottom", "data-tooltip" => "Email Us: design@miscotech.co.uk"}
           %a{:onclick => "Materialize.toast('<h2><strong>Email Us: design@miscotech.co.uk</strong></h2>', 8000 )"}
             %i.large.material-icons email
-        %li
+        %li.top
           %a.page-scroll{:href => "#"}
             %i.large.material-icons search
           /= render "partials/search_form"
@@ -25,11 +25,11 @@
           %a.brand-logo{:href => "/"}
             %img{:src => "/assets/header_logo_white.png"}
         .sidebar-nav.center
-          %li.hidden
+          %li.but.hidden
             %a.page-scroll{:href => "#page-top"}
-          %li.first
+          %li.but.first
             %a.page-scroll{:href => "#company"} COMPANY
-          %li.second
+          %li.but.second
             / %a.dropdown-button{"data-activates" => "dropdown1", :href => "#"} SERVICES
             / %ul#dropdown1.dropdown-content
             /   %li
@@ -40,13 +40,13 @@
             /   %li
             /     %a{:href => "#!"} BRANDING
             %a.page-scroll{:href => "#services"} SERVICES
-          %li.third
+          %li.but.third
             %a.page-scroll{:href => "#contacts"} CONTACT
-          %li.forth
+          %li.but.forth
             %a.page-scroll{:href => "/web"} WEB DESIGN
-          %li.fifth
+          %li.but.fifth
             %a.page-scroll{:href => "/marketing"} MARKETING
-          %li.sixth
+          %li.but.sixth
             %a.page-scroll{:href => "#"} BRANDING
         / Switch
 

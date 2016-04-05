@@ -172,13 +172,14 @@ h1 {
   padding-right: 3px;
 }
 
-.nav-wrapper ul li a:hover{
+.nav-wrapper ul li.but a:hover{
+  text-color: #fff;
+  border-right: 5px solid; border-color: red;
   text-decoration: none !important;
-  background: none;
-  color: green;
+  background: rgba(0,0,0, 0.9);
   
 }
-.nav-wrapper ul li a:hover{border-bottom: 1px solid; border-color: red; transition: 1s; }
+.nav-wrapper ul li.top:hover{color: #fff; border-bottom: 2px solid; border-color: #fff; transition: 0.5s; }
 .brand-logo img{
   width: 200px;
   height: 30px;
@@ -192,6 +193,22 @@ h1 {
 .call {
   width: 100px;
   height: 60px;
+}
+.chip-contianer{
+  background-color: rgba(0,0,0, 0.9);
+  height: 100px;
+  padding-top: 20px;
+  // border: 5px;
+  // border-color: black solid;
+  // border-bottom: 1px solid;
+}
+.side-nav{
+   background-color: rgba(255,255,255, 1);
+   
+}
+.sidebar-nav li.but{
+  color: #000;
+  font-weight: 800;
 }
 // .sidebar-nav {
 //   .first {
@@ -230,7 +247,7 @@ h1 {
     width: 100%;
     position: relative;
     top: 0px;
-    padding-top: 180px;
+    padding-top: 150px;
   }
   #inner-header {
     img{opacity: 0.3;}
@@ -341,21 +358,6 @@ button#vbtn:hover{
   position: relative;
 }
 
-.chip-contianer{
-  background-color: $h-color;
-  height: 100px;
-  padding-top: 20px;
-  border: 5px;
-  border-color: black solid;
-  border-bottom: 1px solid;
-}
-.side-nav{
-   background-color: rgba(255,255,255, 0.1);
-   
-}
-.sidebar-nav li a{
-  color: #fff;
-}
 #footer-nav{
   background-color: #232a3f;
   min-height: 40px;
