@@ -176,8 +176,8 @@ h1 {
   text-color: #fff;
   border-right: 5px solid; border-color: red;
   text-decoration: none !important;
-  background: rgba(0,0,0, 0.9);
-  
+  // background: rgba(0,0,0, 0.9);
+  background-color: #dbdbdc;
 }
 .nav-wrapper ul li.top:hover{color: #fff; border-bottom: 2px solid; border-color: #fff; transition: 0.5s; }
 .brand-logo img{
@@ -274,7 +274,7 @@ h1 {
     }
   }
   background-image: url('code-header');
-  background-attachment: fixed;
+  // background-attachment: fixed;
   // background-color:  $h-color;
 //   -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
 //    animation: mymove 5s infinite;
@@ -1086,11 +1086,18 @@ section {
     border-color: red;
   }
   .container {
-    
+    .web-icon {
+      color: #fff;
+      margin: 50px 0px 30px 0px;
+      i{
+        padding: 10px;
+        border: #fff 3px solid;
+        border-radius: 50%;
+      }
+    }
     p {
       color: #fff;
-      top: 50%;
-      padding-top: 15%;
+
    }
   } 
 
@@ -1309,6 +1316,7 @@ section {
   min-height: 700px;
   width: 100%;
   .market-inner{
+    .dot-cover{background-image: url('overlay-pattern.png'); background-repeat: repeat; height: 700px;}
     .text-caption {
       align-content: left;
       padding-top: 280px;
