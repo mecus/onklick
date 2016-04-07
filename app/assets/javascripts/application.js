@@ -97,20 +97,35 @@ $(function(){
 });
 
 
-// $(function(){
-//   $(".email-marketing").on('click', function(){
-//     $("#email").slideToggle(500);
-//   });
-//   $(".twitter").on('click', function(){
-//     $("#twitter").slideToggle(500);
-//   });
-//    $(".facebook").on('click', function(){
-//     $("#facebook").slideToggle(500);
-//   });
-//     $(".linkedin").on('click', function(){
-//     $("#linkedin").slideToggle(500);
-//   });
-// });
+$(function(){
+  $(".email-marketing").mouseenter(function(){
+    $("#email").animate({width: "show"}, 600);
+  });
+  $(".email-marketing").mouseleave(function(){
+    $("#email").animate({width: "hide"}, 400);
+  });
+
+  $(".twitter").mouseenter(function(){
+    $("#twitter").delay(500).animate({width: "show"}, 600);
+  });
+  $(".twitter").mouseleave(function(){
+    $("#twitter").animate({width: "hide"}, 400);
+  });
+  $(".facebook").mouseenter(function(){
+    $("#facebook").animate({width: "show"}, 600);
+  });
+  $(".facebook").mouseleave(function(){
+    $("#facebook").animate({width: "hide"}, 400);
+  });
+  $(".linkedin").mouseenter(function(){
+    $("#linkedin").animate({width: "show"}, 600);
+  });
+  $(".linkedin").mouseleave(function(){
+    $("#linkedin").animate({width: "hide"}, 400);
+  });
+
+
+});
 
 
 

@@ -449,7 +449,7 @@ button#vbtn:hover{
   height: 600px;
 }
 .hero-image-bespoke {
-  background-image: url('bespoke-design.jpg');
+  background-image: url('bespokedesign.jpg');
   background-size: cover;
   float: right;
   width: 50%;
@@ -469,7 +469,7 @@ button#vbtn:hover{
 }
 
 .hero-image-hosting {
-  background-image: url('web_design.jpg');
+  background-image: url('webdesign.jpg');
   background-size: cover;
   float: left;
   width: 50%;
@@ -1363,6 +1363,11 @@ section {
   }
 }
 .marketing-style {
+  .social-content{
+    padding: 0px 50px;
+    display: flex;
+    margin-right: 30px;
+  }
     //background-color: grey;
     padding: 50px 0px;
     // text-align: center;
@@ -1396,8 +1401,38 @@ section {
       background-color: #083D77;
     }
   }
-  #email {display: none;}
-  #twitter {display: none;}
+  #email {
+    .email-pix{
+      background-image: url('email-market');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 50%;
+      height: 400px;
+    }
+    .email-text{
+      background-color: #02C39A;
+      width: 50%;
+      height: 400px;
+    }
+    display: none;
+    padding: 0px 150px;
+  }
+  #twitter {
+    display: none;
+    padding: 0px 150px;
+    .twitter-text{
+      background-color: #06AED5;
+      width: 50%;
+      height: 400px;
+    }
+    .twitter-pix{
+      background-image: url('twitter');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 50%;
+      height: 400px;
+    }
+  }
   #facebook {display: none;}
   #linkedin {display: none;}
   .active {display: block;}
