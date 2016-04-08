@@ -18,6 +18,8 @@
 .page-text-bg
 	.page-cover
 		.container
+			.web-icon.text-center
+				%i.large.material-icons description
 			%p.center We provide advance web development solutions that will help improve your business that includes content management solutions such as Static websites, Dynamic websites, Responsive websites and E-Commerce website. Our design and developmental solutions are tailored to your company’s needs with non-stop technical support and project management. Our digital designs will meet all your company’s standard and WC3 requirements.
 .row.design-types
 	.property.col.s12.m6.l3
@@ -83,6 +85,10 @@
 					%a.waves-effect.waves-light.btn-large GET A QUOTE
 				.col.s6.border-button
 					%a.waves-effect.waves-light.btn-large{:href => "/#contact-f"} GET IN TOUCH
+.caret-pop.container
+	.arrow-down
+#contacts
+	/ = render 'contacts/form'
 #company-image
 	= render 'partials/company_image'
 
@@ -92,6 +98,7 @@
 		{selector: '.features', offset: 400, callback: 'Materialize.fadeInImage(".features")' },
 		{selector: '#process', offset: 200, callback: 'Materialize.fadeInImage("#process")' },
 		{selector: '.call-to-action', offset: 150, callback: 'Materialize.fadeInImage(".call-to-action")' },
+		{selector: '#contacts', offset: 150, callback: 'Materialize.fadeInImage("#contacts")' },
 		{selector: '#company-image', offset: 400, callback: 'Materialize.fadeInImage("#company-image")' }
 	];
 	Materialize.scrollFire(options);

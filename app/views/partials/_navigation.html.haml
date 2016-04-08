@@ -8,15 +8,19 @@
       %ul.right
         %li.hidden
           %a.page-scroll{:href => "#page-top"}
-        %li
-          %a.tooltipped.calls{"data-delay" => "50", "data-position" => "bottom", "data-tooltip" => "Tel: 020 7635 2679, Mob: 07853 292 983"}
+        %li.top
+          %a.page-scroll{:href => "/"}
+            %i.large.material-icons home
+        %li.top
+          /%a.tooltipped.calls{"data-delay" => "50", "data-position" => "bottom", "data-tooltip" => "Tel: 020 7635 2679, Mob: 07853 292 983"}
+          %a{:onclick => "Materialize.toast('<h2><strong>Tel: 020 7635 2679, Mob: 07853 292 983</strong></h2>', 8000 )"}
             %i.large.material-icons call
-        %li
-          %a.tooltipped.calls{"data-delay" => "50", "data-position" => "bottom", "data-tooltip" => "Email Us: design@miscotech.co.uk"}
+        %li.top
+          /%a.tooltipped.calls{"data-delay" => "50", "data-position" => "bottom", "data-tooltip" => "Email Us: design@miscotech.co.uk"}
+          %a{:onclick => "Materialize.toast('<h2><strong>Email Us: design@miscotech.co.uk</strong></h2>', 8000 )"}
             %i.large.material-icons email
-        %li
-          %a.page-scroll{:href => "#services"}
-            %i.large.material-icons search
+          %li
+            .button.btn.waves-effect.waves-light{:href => "/"} Get Quote
       %ul#slide-out.side-nav
         .chip-contianer.center-align
           %a.brand-logo{:href => "/"}
@@ -24,17 +28,17 @@
         .sidebar-nav.center
           %li.hidden
             %a.page-scroll{:href => "#page-top"}
-          %li.first
+          %li.but.first
             %a.page-scroll{:href => "/#company"} COMPANY
-          %li.second
+          %li.but.second
             %a.page-scroll{:href => "/#services"} SERVICES
-          %li.third
+          %li.but.third
             %a.page-scroll{:href => "/#contact-f"} CONTACT
-          %li.forth
+          %li.but.forth
             %a.page-scroll{:href => "/web"} WEB DESIGN
-          %li.fifth
+          %li.but.fifth
             %a.page-scroll{:href => "/marketing"} MARKETING
-          %li.sixth
+          %li.but.sixth
             %a.page-scroll{:href => "#"} BRANDING
         / Switch
 

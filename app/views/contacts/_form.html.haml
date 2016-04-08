@@ -1,6 +1,6 @@
 #contact-form.container#contact-f
   #contact
-    %h1.center-align GET IN TOUCH
+    %h1.center-align Please fill the form below
     %p.notice= notice
   = form_for :contact, url: contacts_path, remote: true do |f|
     - if @contact.errors.any?
@@ -38,7 +38,7 @@
       %br/
       %br/
       %button#submit-button.btn.waves-effect.waves-light
-        = f.submit "Send Message"
+        = f.submit "Submit"
     
 %br/
 %br/
