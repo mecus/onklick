@@ -98,30 +98,38 @@ $(function(){
 
 
 $(function(){
-  $(".email-marketing").mouseenter(function(){
-    $("#email").animate({width: "show"}, 600);
+  $(".email-marketing, #email").mouseenter(function(){
+    $("#email").animate({width: "show"});
+    $(".email-marketing").css({"opacity": "0.5", "cursor": "crosshair"});
   });
-  $(".email-marketing").mouseleave(function(){
-    $("#email").animate({width: "hide"}, 400);
+  $(".email-marketing, #email").mouseleave(function(){
+    $("#email").animate({width: "hide"});
+    $(".email-marketing").css({"opacity": "1"});
   });
 
-  $(".twitter").mouseenter(function(){
-    $("#twitter").delay(500).animate({width: "show"}, 600);
+  $(".twitter, #twitter").mouseenter(function(){
+    $("#twitter").animate({width: "show"});
+    $(".twitter").css({"opacity": "0.5", "cursor": "crosshair"});
   });
-  $(".twitter").mouseleave(function(){
-    $("#twitter").animate({width: "hide"}, 400);
+  $(".twitter, #twitter").mouseleave(function(){
+    $("#twitter").animate({width: "hide"});
+    $(".twitter").css({"opacity": "01"});
   });
-  $(".facebook").mouseenter(function(){
-    $("#facebook").animate({width: "show"}, 600);
+  $(".facebook, #facebook").mouseenter(function(){
+    $("#facebook").animate({width: "show"});
+    $(".facebook").css({"opacity": "0.5", "cursor": "crosshair"});
   });
-  $(".facebook").mouseleave(function(){
-    $("#facebook").animate({width: "hide"}, 400);
+  $(".facebook, #facebook").mouseleave(function(){
+    $("#facebook").animate({width: "hide"});
+    $(".facebook").css({"opacity": "1"});
   });
-  $(".linkedin").mouseenter(function(){
-    $("#linkedin").animate({width: "show"}, 600);
+  $(".linkedin, #linkedin").mouseenter(function(){
+    $("#linkedin").animate({width: "show"});
+    $(".linkedin").css({"opacity": "0.5", "cursor": "crosshair"});
   });
-  $(".linkedin").mouseleave(function(){
-    $("#linkedin").animate({width: "hide"}, 400);
+  $(".linkedin, #linkedin").mouseleave(function(){
+    $("#linkedin").animate({width: "hide"});
+    $(".linkedin").css({"opacity": "1"});
   });
 
 

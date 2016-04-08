@@ -1402,6 +1402,7 @@ section {
     }
   }
   #email {
+    margin-top: 50px;
     .email-pix{
       background-image: url('email-market');
       background-repeat: no-repeat;
@@ -1413,17 +1414,24 @@ section {
       background-color: #02C39A;
       width: 50%;
       height: 400px;
+      margin-right: -50%;
+      text-align: center;
+      padding: 80px 10px 0px 10px;
+
     }
     display: none;
     padding: 0px 150px;
   }
   #twitter {
+    margin-top: 50px;
     display: none;
     padding: 0px 150px;
     .twitter-text{
       background-color: #06AED5;
       width: 50%;
       height: 400px;
+      text-align: center;
+      padding: 80px 10px 0px 10px;
     }
     .twitter-pix{
       background-image: url('twitter');
@@ -1433,14 +1441,52 @@ section {
       height: 400px;
     }
   }
-  #facebook {display: none;}
-  #linkedin {display: none;}
+  #facebook {
+    margin-top: 50px;
+    display: none;
+    padding: 0px 150px;
+    .facebook-pix{
+      background-image: url('fbook.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 50%;
+      height: 400px;
+    }
+    .facebook-text{
+      background-color: #1B98E0;
+      width: 50%;
+      height: 400px;
+      margin-right: -50%;
+      text-align: center;
+      padding: 80px 10px 0px 10px;
+    }
+  }
+  #linkedin {
+    margin-top: 50px;
+    display: none;
+    padding: 0px 150px;
+    .linkedin-pix{
+      background-image: url('linked-profile');
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 50%;
+      height: 400px;
+    }
+    .linkedin-text{
+      background-color: #083D77;
+      width: 50%;
+      height: 400px;
+      text-align: center;
+      padding: 80px 10px 0px 10px;
+    }
+  }
   .active {display: block;}
 }
-
-
-
-
+@media (max-width: 680px){
+  .marketing-style {
+    display: none;
+  }
+}
 
 
 
