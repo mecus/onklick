@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
   def home
   	@contact = Contact.new
+    @quotation = Quotation.new
   end
 
   def marketing

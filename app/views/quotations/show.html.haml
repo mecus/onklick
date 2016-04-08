@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @quotation.name
+%p
+  %b Company:
+  = @quotation.company
+%p
+  %b Email:
+  = @quotation.email
+%p
+  %b Telephone:
+  = @quotation.telephone
+%p
+  %b Message:
+  = @quotation.message
+
+= link_to 'Edit', edit_quotation_path(@quotation)
+\|
+= link_to 'Back', quotations_path

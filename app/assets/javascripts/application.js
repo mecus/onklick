@@ -132,10 +132,15 @@ $(function(){
     $(".linkedin").css({"opacity": "1"});
   });
 
-
 });
 
+$(function(){
+  $("li .button").on('click', function(){
+    $("#quotation").animate({height: "toggle"}, 600);
+    // $("li .button").css({"background-color": "red"});
 
+  });
+});
 
 
 
