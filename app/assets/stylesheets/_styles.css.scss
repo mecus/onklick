@@ -1506,7 +1506,35 @@ section {
     // padding-left: 200px;
     // padding-right: 200px;
   }
-
+  .quote {
+    input {
+      color: #fff;
+      font-size: 26px;
+      font-family: Open Sans, Roboto, San-serif;
+      margin-top: 40px;
+    }
+    textarea {
+      color: #fff;
+      font-size: 20px;
+      font-family: Open Sans, Roboto, San-serif;
+    }
+    label {
+      color: #02C39A;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+    button {
+      color: red;
+      margin: 0;
+      padding: 0;
+     // height: 50px
+      // label {
+      //   color: #fff;
+      //   font-size: 12px;
+      // } 
+      
+    }
+  }
 }
 
 
