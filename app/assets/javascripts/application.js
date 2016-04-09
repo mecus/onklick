@@ -58,8 +58,8 @@ $(function(){
 
 $(function(){
   $(".form-button").click(function(){
-    $("#contact-f").slideToggle(300);
-    $(".caret-pop").slideToggle(300);
+    $("#quotation").animate({height: "toggle"}, 600);
+    //$(".caret-pop").slideToggle(300);
     // preventDefaul();
   });
   $(".solid-button").click(function(){
