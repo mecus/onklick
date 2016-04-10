@@ -63,8 +63,8 @@ $(function(){
     // preventDefaul();
   });
   $(".solid-button").click(function(){
-    $("#contact-f").slideToggle(300);
-    $(".caret-pop").slideToggle(300);
+    $("#quotation").slideToggle(300);
+    // $(".caret-pop").slideToggle(300);
     // preventDefaul();
   });
   //beaspoke pop up

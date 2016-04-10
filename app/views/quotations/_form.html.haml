@@ -1,5 +1,6 @@
 .quote
-  = form_for @quotation do |f|
+  %p#notice= notice
+  = form_for @quotation, remote: true do |f|
     - if @quotation.errors.any?
       #error_explanation
         %h2= "#{pluralize(@quotation.errors.count, "error")} prohibited this quotation from being saved:"
@@ -12,25 +13,30 @@
           / %i.material-icons.prefix mode_edit
           = f.text_field :name, class: "auto-focus"
           %label{:for => "name"} Name
+      %br    
       .row
         .input-field.col.s12
           = f.text_field :company
           %label{:for => "company"} Company
+      %br  
       .row
         .input-field.col.s12
           = f.text_field :email
           %label{:for => "email"} Email
+      %br  
       .row
         .input-field.col.s12
           = f.text_field :telephone
           %label{:for => "telephone"} Telephone
+      %br  
       .row
         .input-field.col.s12
           = f.text_area :message, class: "materialize-textarea", id: "textarea1", :length => "120"
           %label{:for => "textarea1"} Message
+      %br
       .submit-btn.container.text-center
         %button#submit-button.btn.waves-effect.waves-light
-          = f.submit 'Submit'
+          = f.submit 'Submit.'
 :javascript
   //$('#textarea1').val('Write Your Message here');
   $('#textarea1').trigger('autoresize');

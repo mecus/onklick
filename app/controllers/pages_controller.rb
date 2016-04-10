@@ -5,15 +5,17 @@ class PagesController < ApplicationController
   end
 
   def marketing
+    @quotation = Quotation.new
   end
 
   def company
   end
 
   def contact
+    @contact = Contact.new
   end
   
   def webdesign
-  	@contact = Contact.new
+    @quotation = Quotation.new
   end
 end

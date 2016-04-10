@@ -1139,6 +1139,7 @@ section {
         width: 100px;
       }
     }
+    // :hover{background-color: red; height: 400px;}
   }
   .business {
     background-image: url('business');
@@ -1493,6 +1494,7 @@ section {
   }
 }
 #quotation {
+  padding-top: 100px;
   display: none;
   background-color: rgba(0,0,0, 1.9);
   background-size: cover;
@@ -1501,7 +1503,8 @@ section {
   position: fixed;
   top: 0;
   z-index: 10;
-  h2 {color: #fff;}
+  h2 {color: #fff; padding-top: 30px; font-size: 30px; font-weight: 600;}
+  p {color: #fff; font-size: 14px; margin: 0; padding: 0; }
   .inner{
     // padding-left: 200px;
     // padding-right: 200px;
@@ -1509,9 +1512,8 @@ section {
   .quote {
     input {
       color: #fff;
-      font-size: 26px;
+      font-size: 20px;
       font-family: Open Sans, Roboto, San-serif;
-      margin-top: 40px;
     }
     textarea {
       color: #fff;
@@ -1524,15 +1526,15 @@ section {
       text-transform: uppercase;
     }
     button {
-      color: red;
+      color: #fff;
       margin: 0;
-      padding: 0;
-     // height: 50px
-      // label {
-      //   color: #fff;
-      //   font-size: 12px;
-      // } 
+      padding: 0 20px;
+      input{font-size: 18px; text-transform: lowercase; font-weight: 600;} 
+      background-color: #48b86e;
       
+    }
+    button:hover {
+      background-color: $h-color;
     }
   }
 }
