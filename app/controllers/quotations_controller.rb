@@ -28,11 +28,9 @@ class QuotationsController < ApplicationController
 
     respond_to do |format|
       if @quotation.save
-        format.html { redirect_to @quotation, notice: 'Quotation was successfully created.' }
-        format.json { render :show, status: :created, location: @quotation }
+        format.html { render :new, notice: 'Your information was successfully submitted.' }
       else
         format.html { render :new }
-        format.json { render json: @quotation.errors, status: :unprocessable_entity }
       end
     end
   end
