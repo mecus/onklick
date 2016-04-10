@@ -182,13 +182,14 @@ h1 {
   // background: rgba(0,0,0, 0.9);
   background-color: #dbdbdc;
 }
-.nav-wrapper ul li.top:hover{color: #fff; border-bottom: 2px solid; border-color: #fff; transition: 0.5s; }
+.nav-wrapper ul li.top:hover{color: #fff; border-bottom: 2px solid; border-color: #fff; _webkit-transition: 0.5s; _mos-transition: 0.5s; transition: 0.5s; }
 .brand-logo img{
   width: 200px;
   height: 30px;
   padding: 0 40px 0 20px;
 }
-li .button{}
+li .button{background-color: #48b86e; text-transform: lowercase; font-weight: 600; font-size: 14px; }
+li .button:hover{background-color: $primary-color; color: #48b86e;}
 #nbtn {
   background-color: transparent;
   border: 1px solid #fff;
@@ -266,6 +267,7 @@ li .button{}
       letter-spacing: 3px;
       font-weight: 800;
     }
+    p{padding: 0; margin: 0;}
     hr{width: 150px;}
     .btn {
       background: transparent;
@@ -1271,6 +1273,19 @@ section {
       p {
         padding-left: 6em;
         padding-right: 2em;
+
+      }
+    }
+  }
+}
+@media (max-width: 680px){
+  .features{
+    h2 {font-size: 12px;}
+    p {font-size: 9px;}
+    ul{
+      li{
+        h2 {font-size: 17px;}
+        p {font-size: 13px;}
       }
     }
   }
@@ -1500,15 +1515,23 @@ section {
   background-color: rgba(0,0,0, 1.9);
   background-size: cover;
   width: 100%;
-  height: 1400px;
-  position: fixed;
+  height: 1200px;
+  position: relative;
   top: 0;
   z-index: 100;
-  h2 {color: #fff; padding-top: 30px; font-size: 30px; font-weight: 600;}
+  h2 {color: #fff; padding-top: 30px; padding-bottom: 20px; font-size: 30px; font-weight: 600;}
   p {color: #fff; font-size: 14px; margin: 0; padding: 0; }
   .inner{
-    // padding-left: 200px;
-    // padding-right: 200px;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  @media (max-width: 680px){
+    .inner {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    p {color: #fff; font-size: 12px; margin: 0; padding: 0 50px; }
+    #quotation{padding-top: 0px;}
   }
   .quote {
     input {
