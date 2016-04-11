@@ -188,8 +188,9 @@ h1 {
   height: 30px;
   padding: 0 40px 0 20px;
 }
-li .button{background-color: #48b86e; text-transform: lowercase; font-weight: 600; font-size: 14px; }
-li .button:hover{background-color: $primary-color; color: #48b86e;}
+
+li a.button{background-color: #48b86e; font-size: 16px; letter-spacing: 1px; text-transform: lowercase; font-family: Open Sans, Roboto, San-sarif; font-weight: 600; }
+li a.button:hover{background-color: $primary-color; color: #48b86e;}
 #nbtn {
   background-color: transparent;
   border: 1px solid #fff;
@@ -677,6 +678,7 @@ opacity: 0;
           font-size: 14px;
           padding-top: 7px;
         }
+        a {text-decoration: none;}
         .form-button:hover{background-color: #27586B; border: 1px solid; border-color: #02C39A; color: #02C39A;}
       }
     }
@@ -1285,7 +1287,8 @@ section {
     ul{
       li{
         h2 {font-size: 17px;}
-        p {font-size: 13px;}
+        p {font-size: 11px; margin-bottom: 10px;}
+        i{padding-right: 0.5em;}
       }
     }
   }
