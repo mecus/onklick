@@ -188,6 +188,13 @@ h1 {
   height: 38px;
   padding: 0 40px 0 20px;
 }
+@media (max-width: 680px){
+  .brand-logo img{
+    width: 200px;
+    height: 30px;
+    padding: 0 40px 0 0px;
+  }
+}
 
 li a.button{background-color: #48b86e; font-size: 16px; letter-spacing: 1px; text-transform: lowercase; font-family: Open Sans, Roboto, San-sarif; font-weight: 600; }
 li a.button:hover{background-color: $primary-color; color: #48b86e;}
