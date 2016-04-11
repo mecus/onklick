@@ -3,7 +3,7 @@ var nagbar, yPos;
 function yScroll(){
   nagbar = document.getElementById('nagbar');
   yPos = window.pageYOffset; 
-  if(yPos > 600){
+  if(yPos > 150){
     nagbar.style.height = "60px";
     nagbar.style.paddingTop = "0px";
     nagbar.style.background = "rgba(0,0,0, 0.4)";
