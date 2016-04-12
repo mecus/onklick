@@ -17,3 +17,5 @@
 //= require materialize/extras/nouislider
 //= require turbolinks
 //= require myscripts
+//= require marketing
+//= require web

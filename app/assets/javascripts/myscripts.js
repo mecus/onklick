@@ -79,42 +79,6 @@ $(function(){
 });
 
 
-$(function(){
-  $(".email-marketing, #email").mouseenter(function(){
-    $("#email").animate({width: "show"});
-    $(".email-marketing").css({"opacity": "0.5", "cursor": "crosshair"});
-  });
-  $(".email-marketing, #email").mouseleave(function(){
-    $("#email").animate({width: "hide"});
-    $(".email-marketing").css({"opacity": "1"});
-  });
-
-  $(".twitter, #twitter").mouseenter(function(){
-    $("#twitter").animate({width: "show"});
-    $(".twitter").css({"opacity": "0.5", "cursor": "crosshair"});
-  });
-  $(".twitter, #twitter").mouseleave(function(){
-    $("#twitter").animate({width: "hide"});
-    $(".twitter").css({"opacity": "01"});
-  });
-  $(".facebook, #facebook").mouseenter(function(){
-    $("#facebook").animate({width: "show"});
-    $(".facebook").css({"opacity": "0.5", "cursor": "crosshair"});
-  });
-  $(".facebook, #facebook").mouseleave(function(){
-    $("#facebook").animate({width: "hide"});
-    $(".facebook").css({"opacity": "1"});
-  });
-  $(".linkedin, #linkedin").mouseenter(function(){
-    $("#linkedin").animate({width: "show"});
-    $(".linkedin").css({"opacity": "0.5", "cursor": "crosshair"});
-  });
-  $(".linkedin, #linkedin").mouseleave(function(){
-    $("#linkedin").animate({width: "hide"});
-    $(".linkedin").css({"opacity": "1"});
-  });
-
-});
 
 $(function(){
   $("li .button").on('click', function(){
