@@ -77,7 +77,17 @@ $(function(){
   //   $(".form-button").css("")
   // })
 });
-
+// $(function(){
+//   $(".clear").hide();
+//   $(".menu").click(function(){
+//     $(".menu").hide(1000);
+//     $(".clear").show(500);
+//   });
+//   $(".clear").click(function(){
+//     $(".clear").hide(1000);
+//     $(".menu").show(500);
+//   });
+// });
 
 
 $(function(){

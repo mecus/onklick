@@ -1,25 +1,29 @@
 #page-top.navbar-fixed{"data-spy" => "scroll"}
   %nav#nagbar{:role => "navigation"}
-    %a.button-collapse.show-on-large{"data-activates" => "slide-out", :href => "#"}
-      %i.material-icons#menu-icon menu
+    %a.button-collapse.show-on-large.right{"data-activates" => "slide-out", :href => "#"}
+      %i.material-icons#menu-icon.menu menu
+      / %i.material-icons#menu-icon.clear clear
     .nav-wrapper.page-scroll
-      %a.brand-logo{:href => "/"}
+      %a.brand-logo.left{:href => "/"}
         %img{:src => "/assets/header_logo_white.png"}/
       %ul.right
         %li.hidden
           %a.page-scroll{:href => "#page-top"}
-        %li.top
-          %a.page-scroll{:href => "/"}
-            %i.large.material-icons home
-        %li.top
-          /%a.tooltipped.calls{"data-delay" => "50", "data-position" => "bottom", "data-tooltip" => "Tel: 020 7635 2679, Mob: 07853 292 983"}
-          %a{:onclick => "Materialize.toast('<h2><strong>Tel: 020 7635 2679, Mob: 07853 292 983</strong></h2>', 8000 )"}
-            %i.large.material-icons call
-        %li.top
-          /%a.tooltipped.calls{"data-delay" => "50", "data-position" => "bottom", "data-tooltip" => "Email Us: design@miscotech.co.uk"}
-          %a{:onclick => "Materialize.toast('<h2><strong>Email Us: design@miscotech.co.uk</strong></h2>', 8000 )"}
-            %i.large.material-icons email
-          /= render "partials/search_form"
+        %li.call-us
+          %h6 <span style ="padding-top: 5px; margin-top: 0px; color: #fff; letter-spacing: 2px; display: inline-block;"><strong>Call 020 7635 2679</strong></span>
+          %h6.small.text-center <span style ="padding: 0px; margin: 0px; display: inline-block; font-size: 10px;">office open monday-friday</span>
+        / %li.top
+        /   %a.page-scroll{:href => "/"}
+        /     %i.large.material-icons home
+        / %li.top
+        /   /%a.tooltipped.calls{"data-delay" => "50", "data-position" => "bottom", "data-tooltip" => "Tel: 020 7635 2679, Mob: 07853 292 983"}
+        /   %a{:onclick => "Materialize.toast('<h3><strong>Tel: 020 7635 2679, Mob: 07853 292 983</strong></h3>', 8000 )"}
+        /     %i.large.material-icons call
+        / %li.top
+        /   /%a.tooltipped.calls{"data-delay" => "50", "data-position" => "bottom", "data-tooltip" => "Email Us: design@miscotech.co.uk"}
+        /   %a{:onclick => "Materialize.toast('<h2><strong>Email Us: design@miscotech.co.uk</strong></h2>', 8000 )"}
+        /     %i.large.material-icons email
+        /   /= render "partials/search_form"
         %li
           %a.button.btn.waves-effect.waves-light.page-scroll{:href => "#page-top"} <span class="text-center" style = "font-size: 14px; letter-spacing: 1px;">Get a Quote</span>
       %ul#slide-out.side-nav
