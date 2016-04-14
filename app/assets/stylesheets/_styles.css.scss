@@ -218,17 +218,28 @@ li a.button:hover{background-color: $primary-color; color: #48b86e;}
     height: 30px;
     padding: 0 40px 0 20px;
   }
-  // border: 5px;
-  // border-color: black solid;
-  // border-bottom: 1px solid;
+  //border: 5px;
+  border-color: red solid;
+  border-bottom: 1px solid;
 }
 .side-nav{
-   background-color: rgba(255,255,255, 1);
+   // background-color: rgba(255,255,255, 1);
+   background-color: rgba(0,0,0, 0.8);
    
 }
-.sidebar-nav li.but{
+.sidebar-nav li.but a{
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+}
+.sidebar-nav li.but a:hover{
   color: #000;
-  font-weight: 800;
+  font-weight: 600;
+  font-size: 20px;
+  animation-timing-function: ease-in;
+  // -webkit-transition: 0.5s;
+  // -mos-transition: 0.5s;
+  // transition: 0.5s;
 }
 // .sidebar-nav {
 //   .first {
@@ -369,6 +380,9 @@ button#vbtn:hover{
       color: #000;
     }
   }
+@media (max-width: 680px) {
+  #title-header h1{font-size: 24px;}
+}
  
   #hero-text{
     padding: 30px 10px;
@@ -1121,11 +1135,11 @@ section {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
+  min-height: 600px;
   .page-cover {
     background-color: rgba(0,0,0, 0.9);
     width: 100%;
-    height: 400px;
+    min-height: 600px;
     border-top: 1px dotted;
     border-color: red;
   }
@@ -1141,7 +1155,11 @@ section {
     }
     p {
       color: #fff;
-
+      text-overflow: hidden;
+      letter-spacing: 1px;
+      margin: 0px;
+      padding: 0 0 20px 0;
+      line-height: 30px;
    }
   } 
 
@@ -1407,13 +1425,15 @@ section {
       h1 {
         color: #fff;
         text-transform: uppercase;
-        font-size: 26px;
+        font-size: 32px;
+        font-weight: 800;
       }
       p { 
         color: #fff;
       }
       hr {
         width: 150px;
+        padding-bottom: 40px;
       }
     }
   }
@@ -1474,6 +1494,8 @@ section {
       margin-right: -50%;
       text-align: center;
       padding: 80px 10px 0px 10px;
+      h2 { color: #fff;}
+      p{color: #fff;}
 
     }
     display: none;
@@ -1489,6 +1511,8 @@ section {
       height: 400px;
       text-align: center;
       padding: 80px 10px 0px 10px;
+      h2 { color: #fff;}
+      p{color: #fff;}
     }
     .twitter-pix{
       background-image: url('twitter');
@@ -1518,6 +1542,8 @@ section {
       margin-right: -50%;
       text-align: center;
       padding: 80px 10px 0px 10px;
+      h2 { color: #fff;}
+      p{color: #fff;}
     }
   }
   #linkedin {
@@ -1538,6 +1564,8 @@ section {
       height: 400px;
       text-align: center;
       padding: 80px 10px 0px 10px;
+      h2 { color: #fff;}
+      p{color: #fff;}
     }
   }
 }
