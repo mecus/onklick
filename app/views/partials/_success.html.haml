@@ -1,0 +1,24 @@
+/ %a.waves-effect.waves-light.btn.modal-trigger{:href => "#modal1"} Modal
+/ Modal Structure
+#modal1.modal
+	.modal-content
+		%h4.text-center Thanks for providing your information
+		%p.text-center One of our team will contact you shortly
+	.modal-footer
+		%a.modal-action.modal-close.waves-effect.waves-green.btn-flat{:href => "/"} close
+
+
+
+:javascript
+	$(document).ready(function(){
+	// the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+		$('.modal-trigger').leanModal();
+	});
+	$('.modal-trigger').leanModal({
+		// dismissible: false, // Modal can be dismissed by clicking outside of the modal
+		opacity: .5, // Opacity of modal background
+		in_duration: 300, // Transition in duration
+		out_duration: 200, // Transition out duration
+		// ready: function() { alert('Ready'); }, // Callback for Modal open
+		// complete: function() { alert('Closed'); } // Callback for Modal close
+	});

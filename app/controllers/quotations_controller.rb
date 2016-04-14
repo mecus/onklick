@@ -28,7 +28,8 @@ class QuotationsController < ApplicationController
 
     respond_to do |format|
       if @quotation.save
-        format.html { render :new, notice: 'Your information was successfully submitted.' }
+        format.html { redirect_to root_path, notice: 'Your information was successfully submitted.' }
+        format.js
       else
         format.html { render :new }
       end

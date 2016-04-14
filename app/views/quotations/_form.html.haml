@@ -11,22 +11,22 @@
       .row
         .input-field.col.s12
           / %i.material-icons.prefix mode_edit
-          = f.text_field :name, class: "auto-focus"
+          = f.text_field :name, class: "name-field"
           %label{:for => "name"} Name
       %br    
       .row
         .input-field.col.s12
-          = f.text_field :company
+          = f.text_field :company, class: "company-field"
           %label{:for => "company"} Company
       %br  
       .row
         .input-field.col.s12
-          = f.text_field :email
+          = f.text_field :email, class: "email-field"
           %label{:for => "email"} Email
       %br  
       .row
         .input-field.col.s12
-          = f.text_field :telephone
+          = f.text_field :telephone, class: "telephone-field"
           %label{:for => "telephone"} Telephone
       %br  
       .row
