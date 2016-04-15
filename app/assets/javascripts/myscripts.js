@@ -97,6 +97,9 @@ $(function(){
 
   });
 });
+$(function(){
+  $('.parallax').parallax();
+});
 
 // $(function(){
 //   $(".property").mouseenter(function(){

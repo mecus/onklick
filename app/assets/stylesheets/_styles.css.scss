@@ -422,14 +422,40 @@ button#vbtn:hover{
       color: #fff;
       font-family: Open Sans;
       font-height: 42px;
-      font-size: 42pt;
+      font-size: 32pt;
+      font-weight: 800;
     }
-    h3:hover {
-      background-color: #000;
-      color: red;
-      transition: 1s;
-      cursor: pointer;
+    h5 {
+      font-size: 18px;
+      font-family: Roboto;
+      color: #fff;
+      letter-spacing: 1px;
+      font-weight: 600;
     }
+    a.btn{
+      background: none;
+      border: 1px solid #fff;
+    }
+    a.btn:hover{background-color: #48b86e; color: black; border: none;}
+    ul{
+      li{
+        display: inline-block;
+        font-size: 36px;
+        color: #fff;
+        padding: 0 5px;
+        .fa-facebook-square{color: #1B98E0;} .fa-facebook-square:hover{font-size: 30px; -webkit-transition: 1s; transition: 1s;}
+        .fa-twitter-square{color: #06AED5;} .fa-twitter-square:hover{font-size: 30px; -webkit-transition: 1s; transition: 1s;}
+        .fa-linkedin-square{color: #083D77;} .fa-linkedin-square:hover{font-size: 30px; -webkit-transition: 1s; transition: 1s;}
+        .fa-google-plus-square{color: #dd4b39;} .fa-google-plus-square:hover{font-size: 30px; -webkit-transition: 1s; transition: 1s;}
+        .fa-youtube-square{color: red;}.fa-youtube-square:hover{font-size: 30px; -webkit-transition: 1s; transition: 1s;}
+      }
+    }
+    // h3:hover {
+    //   background-color: #000;
+    //   color: red;
+    //   transition: 1s;
+    //   cursor: pointer;
+    // }
   }
 }
 

@@ -5,9 +5,9 @@ Rails.application.routes.draw do
 
   get 'marketing' => 'pages#marketing'
 
-  get 'pages/company'
+  get 'company' => 'pages#company'
 
-  get 'pages/contact'
+  get 'contact' =>  'pages#contact'
   get 'web' => 'pages#webdesign'
 
   # The priority is based upon order of creation: first created -> highest priority.
