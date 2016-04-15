@@ -10,12 +10,14 @@ function yScroll(){
     $(".top-page").show();
     //nagbar.style.opacity = '0.5';
     $(".brand-logo img").css({"width": "180px", "height": "24px", "transition": "0.5s"});
+    $(".inner-contact").css({"backgroundColor": "rgba(0,0,0, 0.9)", "transition": "5s"});
   } else {
     nagbar.style.height = "80px";
     nagbar.style.paddingTop = "5px";
     nagbar.style.background = "transparent";
     $(".top-page").hide();
     $(".brand-logo img").css({"width": "240px", "height": "38px", "transition": "0.5s"});
+    $(".inner-contact").css({"backgroundColor": ""});
   }
 }
 window.addEventListener("scroll", yScroll);

@@ -1661,10 +1661,11 @@ section {
 }
 
 //Our contact page start here//
-.our-contact{
+#our-contact{
   background-image: url('call-us');
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   min-height: 700px;
   width: 100%;
   position: relative;
