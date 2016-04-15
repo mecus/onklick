@@ -1,0 +1,41 @@
+.our-contact
+	.inner-contact
+		.dotted-cover
+			#heading-text.container
+				%h1.text-center GET IN TOUCH.
+				%p.text-center
+				%ul.center
+					%li
+						%a{:href =>"https://www.facebook.com/onklickmedia", target: "blank"}
+							%i.fa.fa-facebook-square
+					%li
+						%a{:href =>"https://plus.google.com/102704021727611661526", target: "blank"}
+							%i.fa.fa-google-plus-square
+					%li
+						%i.fa.fa-twitter-square
+					%li
+						%i.fa.fa-youtube-square
+					%li
+						%a{:href =>"https://www.linkedin.com/in/austin-oseh-515228a6?trk=nav_responsive_tab_profile", target: "blank"}
+							%i.fa.fa-linkedin-square 
+			.quick-contact.container.center
+				%h6.text-center Got new or existing project you want us to work on? Call 02076352679 or 
+				%a.waves-effect.waves-light.btn.center.page-scroll.contact-us{:href => "#page-top"} Request a Quote
+
+#contact-us.row
+	.form.col.s12.m6.l6
+		.map-cover
+			.text-wrapper.center
+				%h6.text-center 160a New Cross Road
+				%h6.text-center London
+				%h6.text-center SE14 5AR
+				%h6.text-center 02076352679
+				%h6.text-center info@onklick.co.uk
+				%br
+				%h6.text-center Office Open Monday - Friday
+				%h6.text-center 10am - 7pm
+			/ = render 'contacts/form'
+
+	.address.col.s12.m6.l6
+		%iframe{:allowfullscreen => "", :frameborder => "0", :height => "600", :src => "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3575.791575116959!2d-0.049860411246478026!3d51.47597591927426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1460730346800", :style => "border:0; background-color: black; opacity: 0.6;", :width => "100%"}
+			

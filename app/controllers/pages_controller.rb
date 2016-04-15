@@ -13,6 +13,7 @@ class PagesController < ApplicationController
 
   def contact
     @contact = Contact.new
+    @quotation = Quotation.new
   end
   
   def webdesign

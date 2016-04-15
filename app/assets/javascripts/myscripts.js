@@ -45,7 +45,12 @@ $(function(){
     // preventDefaul();
   });
   $(".solid-button").click(function(){
-    $("#quotation").slideToggle(300);
+    $("#quotation").slideToggle(1000);
+    // $(".caret-pop").slideToggle(300);
+    // preventDefaul();
+  });
+   $(".contact-us").click(function(){
+    $("#quotation").slideToggle(1000);
     // $(".caret-pop").slideToggle(300);
     // preventDefaul();
   });

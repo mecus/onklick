@@ -1660,7 +1660,96 @@ section {
   }
 }
 
+//Our contact page start here//
+.our-contact{
+  background-image: url('call-us');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 700px;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: -100;
+  float: left;
+  // -webkit-filter: blur(2px);
+  // filter: blur(2px);
 
+  .inner-contact{
+    background-color: rgba(0,0,0, 0.2);
+    height: 700px;
+    .dotted-cover{
+      background-image: url('overlay-pattern.png'); 
+      background-repeat: repeat; height: 700px;
+      #heading-text{
+        h1{
+          color: #fff;
+          position: relative;
+          top: 250px;
+          font-size: 32px;
+          font-weight: 800;
+          letter-spacing: 2px;
+        }
+        ul li{
+          position: relative;
+          top: 190px;
+          display: inline-block;
+          i{font-size: 30px; color: #fff; padding: 0 5px;}
+          i:hover{opacity: 0.8; }
+          .fa-facebook-square{
+            color: #1B98E0;
+          }
+          .fa-twitter-square{
+            color: #06AED5;
+          }
+          .fa-youtube-square{
+            color: red;
+          }
+          .fa-linkedin-square{
+            color: #083D77;
+          }
+          .fa-google-plus-square{
+            color: #dd4b39;
+          }
+        }
+      }
+      .quick-contact{
+        position: relative;
+        top: 200px;
+        h6{color: #fff; font-size: 18px;}
+        a.btn{
+          background: none;
+          border: 1px solid #fff;
+        }
+      }
+    }
+  }
+}
+#contact-us{
+  .form{
+    background-image: url('Google Maps');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    // width: auto;
+    height: 600px;
+    .text-wrapper{
+      padding-top: 200px;
+      h6{
+        font-size: 16px;
+        color: #fff;
+      }
+    }
+    .map-cover{
+      background-color: rgba(0,0,0, 0.7);
+      height: 600px;
+    }
+  }
+  .address{
+    // background-color: green;
+    // width: auto;
+    height: 600px;
+  }
+}
 
 
 
