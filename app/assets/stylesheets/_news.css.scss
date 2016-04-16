@@ -1,0 +1,36 @@
+.news{
+	background-color: grey;
+	// height: 400px;
+	width: 100%;
+	overflow: hidden;
+	.image-wrapper{
+		// min-height: 400px;
+		width: 100%;
+		img{
+			// height: 300px;
+			width: 100%;
+			overflow: hidden;
+		}
+	}
+}
+.news-wrapper{
+	img{
+		width: 100%;
+		background-size: cover;
+		height: 800px;
+		overflow: hidden;
+	}
+	.news-title{
+		position: fixed;
+		top: 40%;
+		left: 50%;
+		z-index: 100;
+		h1{
+			color: #fff;
+			font-weight: 800;
+			font-size: 32px;
+			letter-spacing: 2px;
+		}
+	}
+
+}

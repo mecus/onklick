@@ -1,0 +1,28 @@
+
+- @blogs.each_slice(4) do |blogs|
+  .row
+    - blogs.each do |blog|
+      .col.s12.m4.l3
+        .news
+          .image-wrapper
+            = link_to blog do
+              = image_tag blog.image.url(:large)
+              %h5.text-center
+                = blog.title
+  / = blog.title
+  / = blog.excerpt
+  / .items.row
+  /   .col.s12.m4.l3
+  /     = image_tag blog.image.url(:large), :class => "responsive-img thumb"
+  / .col.l4.item2
+  /   = image_tag blog.image.url(:large), :class => "img-responsive"
+  / .col.l4.item3
+  /   = image_tag blog.image.url(:large), :class => "img-responsive"
+  / = blog.contents
+  / = link_to 'Show', blog
+  / = link_to 'Edit', edit_blog_path(blog)
+  / = link_to 'Destroy', blog, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+
+
+/ = link_to 'New Blog', new_blog_path

@@ -2,6 +2,7 @@ class PagesController < ApplicationController
   def home
   	@contact = Contact.new
     @quotation = Quotation.new
+    @blogs = Blog.all
   end
 
   def marketing
@@ -9,6 +10,9 @@ class PagesController < ApplicationController
   end
 
   def company
+  end
+  def news
+    @blogs = Blog.all
   end
 
   def contact

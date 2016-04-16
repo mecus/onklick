@@ -1,0 +1,22 @@
+= render "partials/main_nav"
+.news-wrapper
+	=image_tag @blog.image.url(:large)
+	.news-title
+		%h1.text-center
+			= @blog.title
+	.page-content
+		%p.text-center 
+			= @blog.contents
+
+
+  
+
+
+/ = @blog.excerpt
+
+/ %b Contents
+/ = @blog.contents
+
+/ = link_to 'Edit', edit_blog_path(@blog)
+/ \|
+/ = link_to 'Back', blogs_path

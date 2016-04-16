@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :blogs
   resources :quotations
   resources :contacts
   root 'pages#home'
@@ -6,7 +7,7 @@ Rails.application.routes.draw do
   get 'marketing' => 'pages#marketing'
 
   get 'company' => 'pages#company'
-
+  get 'news' => 'pages#news'
   get 'contact' =>  'pages#contact'
   get 'web' => 'pages#webdesign'
 
