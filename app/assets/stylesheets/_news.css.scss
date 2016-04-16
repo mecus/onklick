@@ -14,12 +14,24 @@
 	}
 }
 .news-wrapper{
-	img{
-		width: 100%;
-		background-size: cover;
-		height: 800px;
-		overflow: hidden;
+	.img-wrapper{
+		loat: left;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    background: #000;
+    height: 911px;
+    // max-height: 1100px!important;
+    display: block;
+    img{
+			width: 100%;
+		  height: 911px;
+		  margin-top: 0px;
+		  background-size: 100%;
+		}
 	}
+	 
 	.news-title{
 		position: fixed;
 		top: 40%;
