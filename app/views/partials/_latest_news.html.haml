@@ -1,14 +1,20 @@
-
+.news-header.container
+  %h1.text-center #Latest News
 - @blogs.each_slice(4) do |blogs|
   .row
     - blogs.each do |blog|
-      .col.s12.m4.l3
+      .col.s12.m6.l3
         .news
           .image-wrapper
             = link_to blog do
               = image_tag blog.image.url(:large)
+          = link_to blog do
+            .caption-text 
               %h5.text-center
                 = blog.title
+          %h6.text-center 
+            Posted on
+            = blog.created_at.to_formatted_s(:long_ordinal)
   / = blog.title
   / = blog.excerpt
   / .items.row

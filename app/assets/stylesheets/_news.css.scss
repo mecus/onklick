@@ -1,41 +1,97 @@
+//All blog post//
+.all-blog{
+	background-color: rgba(0,0,0, 0.2);
+}
+.blog-table{
+	margin-top: 100px;
+}
+.news-header h1{
+	margin-bottom: 40px;
+	font-weight: 600;
+	font-size: 32px;
+	font-family: Open Sans;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
 .news{
-	background-color: grey;
+	// background-color: grey;
 	// height: 400px;
-	width: 100%;
 	overflow: hidden;
+	margin-bottom: 40px;
+	// @include box-shadow;
+	
 	.image-wrapper{
-		// min-height: 400px;
-		width: 100%;
+		background-color: #000;
+		min-height: 300px;
+		max-width: 100%;
+		margin: 5px;
+		overflow: hidden;
 		img{
-			// height: 300px;
+			-webkit-transition: all .3s ease-out;
+			-moz-transition: all .3s ease-out;
+			-o-transition: all .3s ease-out;
+			min-height: 300px;
+			height: auto;
+			min-width: 100%;
 			width: 100%;
-			overflow: hidden;
+			background-size: cover;
+			background-color: #000;
+			&:hover{transform: scale(1.785); opacity: 0.2;}
+			// &:hover{
+			// 	-webkit-transform: rotate(30deg);
+			// 	-moz-transform: rotate(30deg);
+			// 	-o-transform: rotate(30deg);
+			// 	transform: rotate(30deg);
+
+			// }
+			
 		}
 	}
 }
+//displaying a single blog post//
 .news-wrapper{
+	margin-bottom: 100px;
 	.img-wrapper{
-		loat: left;
+		top: 0;
     width: 100%;
     position: relative;
-    z-index: 1;
+    z-index: 0;
     overflow: hidden;
     background: #000;
-    height: 911px;
+    height: 800px;
     // max-height: 1100px!important;
     display: block;
     img{
-			width: 100%;
-		  height: 911px;
+			max-width: 2600px;
+			min-width: 100%;
+		  height: auto;
+		  min-height: 800px;
 		  margin-top: 0px;
 		  background-size: 100%;
 		}
+
+	.img-filter{
+  	background-image: url('overlay-pattern.png');
+  	background-repeat: repeat;
+  	// background-size: cover;
+  	// background-color: red;
+  	width: 100%;
+  	height: 800px;
+  	position: absolute;
+  	top: 0;
+  	z-index: 100;
 	}
+	}
+	// @media (max-width: 680px){
+	// 		.img-wrapper img{width: auto; left: -50%; right: 0;}
+	// 	}
 	 
 	.news-title{
-		position: fixed;
-		top: 40%;
-		left: 50%;
+		width: 500px;
+		float: left;
+		position: absolute;
+		top: 60%;
+		left: 5%;
 		z-index: 100;
 		h1{
 			color: #fff;
@@ -43,6 +99,13 @@
 			font-size: 32px;
 			letter-spacing: 2px;
 		}
+		h6{
+			color: #fff;
+			letter-spacing: 1px;
+		}
 	}
-
 }
+.page-content{
+	margin: 50px 20px 0 20px;
+}
+

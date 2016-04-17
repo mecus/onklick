@@ -10,5 +10,7 @@
     %link{:href => "https://fonts.googleapis.com/css?family=Open+Sans:Light+300|Open+Sans|Dosis|Dosis:ExtraLight", :rel => "stylesheet", :type => "text/css"}
     = csrf_meta_tags
   %body
+    / %p.notice= notice
+    / %p.alert= alert
     = yield
     /= render "layouts/preload"

@@ -1,5 +1,7 @@
 class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_admin!, except: :show
+
 
   # GET /blogs
   # GET /blogs.json
@@ -10,11 +12,12 @@ class BlogsController < ApplicationController
   # GET /blogs/1
   # GET /blogs/1.json
   def show
+    @blogs = Blog.all.order("created_at DESC")
   end
 
   # GET /blogs/new
   def new
-    @blog = Blog.new
+    @blog = current_admin.blogs.build
   end
 
   # GET /blogs/1/edit
@@ -24,7 +27,7 @@ class BlogsController < ApplicationController
   # POST /blogs
   # POST /blogs.json
   def create
-    @blog = Blog.new(blog_params)
+    @blog = current_admin.blogs.build(blog_params)
 
     respond_to do |format|
       if @blog.save

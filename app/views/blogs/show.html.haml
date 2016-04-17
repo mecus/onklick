@@ -2,12 +2,23 @@
 .news-wrapper
 	.img-wrapper
 		=image_tag @blog.image.url(:large)
-		.news-title
-			%h1.text-center
-				= @blog.title
-	.page-content
-		%p.text-center 
-			= @blog.contents
+		.img-filter
+		.news-title.container
+			%h1= @blog.title
+			%h6= @blog.excerpt
+			%h5
+				Posted on
+				= @blog.created_at.to_formatted_s(:long_ordinal)
+
+	.page-content.row
+		.container
+			.side-bar-left.col.s12.m8.l4
+				/ = @blog.admin.email
+			.main-content.col.s12.m8.l8
+				%p.text-center 
+					= @blog.contents
+			
+			
 
 
   

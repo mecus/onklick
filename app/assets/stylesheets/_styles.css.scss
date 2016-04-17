@@ -241,6 +241,12 @@ li a.button:hover{background-color: $primary-color; color: #48b86e;}
   // -mos-transition: 0.5s;
   // transition: 0.5s;
 }
+.sidebar-nav {
+  .auth a{
+  font-size: 18px;
+  color: red;
+  }
+}
 // .sidebar-nav {
 //   .first {
 //     background-color: red;
@@ -676,6 +682,7 @@ opacity: 0;
   }
 }
 .our-contact{
+  .contact-head h1{font-size: 32px; font-family: Open Sans; font-weight: 600; letter-spacing: 3px; margin-bottom: 40px; text-transform: uppercase;}
   .contact-us{
     .call-us{
       background-image: url('call-us'); background-repeat: no-repeat; background-size: cover; height: 300px;
@@ -846,6 +853,7 @@ opacity: 0;
    #support:hover{ background-image: url('support-process'); background-position: fixed; background-size: cover; color:  #E83F6F; border: 1px solid; border-radius: 50%; border-color: black; text-transform: uppercase; transition: 0.5s;}  
   }
   .process-header {
+    h1{font-size: 32px; font-weight: 600; font-family: Open Sans; letter-spacing: 3px;}
     padding: 50px 0px;
     hr {
       color: $primary-color;

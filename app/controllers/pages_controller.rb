@@ -1,8 +1,9 @@
 class PagesController < ApplicationController
+  # before_action :authenticate_admin!,  except: :home
   def home
   	@contact = Contact.new
     @quotation = Quotation.new
-    @blogs = Blog.all
+    @blogs = Blog.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 8)
   end
 
   def marketing

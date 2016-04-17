@@ -1,28 +1,29 @@
-/= render "partials/main_nav"
-.container
+= render "partials/navigation"
+.all-blog
+  .container
 
-  %table
-    %thead
-      %tr
-        %th Title
-        %th Excerpt
-        %th Image
-        %th Contents
-        %th
-        %th
-        %th
-
-    %tbody
-      - @blogs.each do |blog|
+    %table.highlight.blog-table
+      %thead
         %tr
-          %td= blog.title
-          %td= blog.excerpt
-          %td= image_tag blog.image.url(:thumb)
-          %td= blog.contents
-          %td= link_to 'Show', blog
-          %td= link_to 'Edit', edit_blog_path(blog)
-          %td= link_to 'Destroy', blog, :method => :delete, :data => { :confirm => 'Are you sure?' }
+          %th Title
+          %th Excerpt
+          %th Image
+          %th Contents
+          %th
+          %th
+          %th
 
-  %br
+      %tbody
+        - @blogs.each do |blog|
+          %tr
+            %td= blog.title
+            %td= blog.excerpt
+            %td= image_tag blog.image.url(:thumb)
+            %td= blog.contents
+            %td= link_to 'Show', blog
+            %td= link_to 'Edit', edit_blog_path(blog)
+            %td= link_to 'Destroy', blog, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
-  = link_to 'New Blog', new_blog_path
+    %br
+
+    = link_to 'New Blog', new_blog_path

@@ -34,7 +34,7 @@
           %li.but.hidden
             %a.page-scroll{:href => "#page-top"}
           %li.but.first
-            %a.page-scroll{:href => "#company"} COMPANY
+            %a.page-scroll{:href => "#news"} NEWS
           %li.but.second
             / %a.dropdown-button{"data-activates" => "dropdown1", :href => "#"} SERVICES
             / %ul#dropdown1.dropdown-content
@@ -52,6 +52,11 @@
             %a.page-scroll{:href => "/web"} WEB DESIGN
           %li.but.fifth
             %a.page-scroll{:href => "/marketing"} MARKETING
+          %l1.auth
+            - if !admin_signed_in?
+              = link_to "Sign in", new_admin_session_path
+            - else
+              = link_to "Sign out", destroy_admin_session_path, method: :delete
           / %li.but.sixth
           /   %a.page-scroll{:href => "#"} BRANDING
         / Switch
