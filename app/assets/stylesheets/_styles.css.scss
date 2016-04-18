@@ -209,42 +209,61 @@ li a.button:hover{background-color: $primary-color; color: #48b86e;}
   width: 100px;
   height: 60px;
 }
-.chip-contianer{
-  background-color: rgba(0,0,0, 0.9);
-  height: 100px;
-  padding-top: 20px;
-  a.brand-logo{
-    width: 200px;
-    height: 30px;
-    padding: 0 40px 0 20px;
-  }
-  //border: 5px;
-  border-color: red solid;
-  border-bottom: 1px solid;
-}
+// .chip-contianer{
+//   background-color: rgba(0,0,0, 0.9);
+//   height: 100px;
+//   padding-top: 20px;
+//   a.brand-logo{
+//     display: inline-block;
+//     i{
+//       font-size: 50px;
+//       color: #fff;
+//       display: inline-block;
+//     }
+//     width: 200px;
+//     height: 100px;
+//     // padding: 0 40px 0 20px;
+//   }
+//   //border: 5px;
+//   border-color: red solid;
+//   border-bottom: 1px solid;
+// }
 .side-nav{
-   // background-color: rgba(255,255,255, 1);
-   background-color: rgba(0,0,0, 0.8);
+   background-color: rgba(255,255,255, 1);
+   // background-color: rgba(0,0,0, 0.8);
+    // a i{
+    //   font-size: 30px;
+    //   color: #fff;
+    //   margin-bottom: 0;
+    //   padding-bottom: 0;
+    //   padding-top: 30px;
+    // }
+
    
 }
 .sidebar-nav li.but a{
-  color: #fff;
+  color: #6D6875;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
+  padding-left: 30px;
+  // text-transform: uppercase;
 }
 .sidebar-nav li.but a:hover{
   color: #000;
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 16px;
   animation-timing-function: ease-in;
   // -webkit-transition: 0.5s;
   // -mos-transition: 0.5s;
   // transition: 0.5s;
 }
-.sidebar-nav {
+.side-nav {
   .auth a{
-  font-size: 18px;
-  color: red;
+  font-size: 14px;
+  color: #fff;
+  background-color: #114B5F;
+  display: block;
+  // padding-left: 50px;
   }
 }
 // .sidebar-nav {
@@ -536,6 +555,7 @@ button#vbtn:hover{
     background-color: #000;
     background-repeat: no-repeat;
     background-position: center;
+    // &:hover{transform: scale(1.785); opacity: 0.2;}
   }
   .bespoke-pop {
     background-color: rgba(35,42,63, 0.9);
@@ -826,7 +846,14 @@ opacity: 0;
 .process {
   padding-bottom: 50px;
   margin-bottom: 100px;
+  display: block;
   .process-wrapper {
+    .c-wrapper{
+      padding: auto;
+      margin: auto;
+      display: inline-block;
+    }
+    display: block;
     text-align: center;
     #sign-up, #research, #design, #build, #launch, #support {
       padding: 30px 0px;
@@ -845,12 +872,12 @@ opacity: 0;
       color: $h-color;
       text-align: center;
     }
-   #sign-up:hover{ background-image: url('sign-up'); background-position: fixed; background-size: cover; color: #fff; border: 1px solid; border-radius: 50%; border-color: red; text-transform: uppercase; transition: 0.5s; }
-   #research:hover{ background-image: url('Research'); background-position: fixed; background-size: cover; color:  #2274A5; border: 1px solid; border-radius: 50%; border-color: brown; text-transform: uppercase; transition: 0.5s;} 
-   #design:hover{ background-image: url('process-design'); background-position: fixed; background-size: cover; color:  #fff; border: 1px solid; border-radius: 50%; border-color: green; text-transform: uppercase; transition: 0.5s;} 
-   #build:hover{ background-image: url('build-process'); background-position: fixed; background-size: cover; color: #FFBF00; border: 1px solid; border-radius: 50%; border-color: blue; text-transform: uppercase; transition: 0.5s;} 
-   #launch:hover{ background-image: url('launch-process'); background-position: fixed; background-size: cover; color: #fff; border: 1px solid; border-radius: 50%; border-color: grey; text-transform: uppercase; transition: 0.5s;} 
-   #support:hover{ background-image: url('support-process'); background-position: fixed; background-size: cover; color:  #E83F6F; border: 1px solid; border-radius: 50%; border-color: black; text-transform: uppercase; transition: 0.5s;}  
+   #sign-up:hover{ display: block; background-image: url('sign-up'); background-position: fixed; background-size: cover; color: #fff; border: 1px solid; border-radius: 50%; border-color: red; text-transform: uppercase; transition: 0.5s; }
+   #research:hover{ display: block; background-image: url('Research'); background-position: fixed; background-size: cover; color:  #2274A5; border: 1px solid; border-radius: 50%; border-color: brown; text-transform: uppercase; transition: 0.5s;} 
+   #design:hover{ display: block; background-image: url('process-design'); background-position: fixed; background-size: cover; color:  #fff; border: 1px solid; border-radius: 50%; border-color: green; text-transform: uppercase; transition: 0.5s;} 
+   #build:hover{ display: block; background-image: url('build-process'); background-position: fixed; background-size: cover; color: #FFBF00; border: 1px solid; border-radius: 50%; border-color: blue; text-transform: uppercase; transition: 0.5s;} 
+   #launch:hover{ display: block; background-image: url('launch-process'); background-position: fixed; background-size: cover; color: #fff; border: 1px solid; border-radius: 50%; border-color: grey; text-transform: uppercase; transition: 0.5s;} 
+   #support:hover{ display: block; background-image: url('support-process'); background-position: fixed; background-size: cover; color:  #E83F6F; border: 1px solid; border-radius: 50%; border-color: black; text-transform: uppercase; transition: 0.5s;}  
   }
   .process-header {
     h1{font-size: 32px; font-weight: 600; font-family: Open Sans; letter-spacing: 3px;}

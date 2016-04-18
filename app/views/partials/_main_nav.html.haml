@@ -1,5 +1,5 @@
 #page-top.navbar-fixed{"data-spy" => "scroll"}
-  %nav#nagbar{:role => "navigation"}
+  %nav#nagbar.z-depth-5{:role => "navigation"}
     %a.button-collapse.show-on-large{"data-activates" => "slide-out", :href => "#"}
       %i.material-icons#menu-icon.menu menu
       / %i.material-icons#menu-icon.clear clear
@@ -26,15 +26,22 @@
         /   /= render "partials/search_form"
         %li
           %a.button.btn.waves-effect.waves-light.page-scroll{:href => "#page-top"} <span class="text-center" style = "font-size: 14px; letter-spacing: 1px;">Get a Quote</span>
-      %ul#slide-out.side-nav
-        .chip-contianer.center-align
-          %a.brand-logo{:href => "/"}
-            %img{:src => "/assets/header_logo_white.png"}
-        .sidebar-nav.center
+      %ul#slide-out.side-nav.z-depth-5
+        %l1.auth
+          - if !admin_signed_in?
+            = link_to "Sign in", new_admin_session_path
+          - else
+            = link_to "Sign out", destroy_admin_session_path, method: :delete
+          / %i.large.material-icons.z-depth-5.text-center home %i.fa.fa-user{"aria-hidden" => "true"}
+        .sidebar-nav
           %li.but.hidden
             %a.page-scroll{:href => "#page-top"}
           %li.but.first
-            %a.page-scroll{:href => "#news"} NEWS
+            %a.page-scroll{:href => "/"} 
+              %i.fa.fa-home{"aria-hidden" => "true"} <span style = "font-family: Open Sans;  padding-left: 10px;">Home</span>
+          %li.but.first
+            %a.page-scroll{:href => "#news"}
+              %i.fa.fa-newspaper-o{"aria-hidden" => "true"} <span style = "font-family: Open Sans;  padding-left: 10px;">News</span>
           %li.but.second
             / %a.dropdown-button{"data-activates" => "dropdown1", :href => "#"} SERVICES
             / %ul#dropdown1.dropdown-content
@@ -45,18 +52,18 @@
             /   %li.divider
             /   %li
             /     %a{:href => "#!"} BRANDING
-            %a.page-scroll{:href => "#services"} SERVICES
+            %a.page-scroll{:href => "#"}
+              %i.fa.fa.fa-cogs{"aria-hidden" => "true"} <span style = "font-family: Open Sans;  padding-left: 10px;">Services</span>
           %li.but.third
-            %a.page-scroll{:href => "/contact"} CONTACT
+            %a.page-scroll{:href => "/contact"}
+              %i.fa.fa-sticky-note-o{"aria-hidden" => "true"} <span style = "font-family: Open Sans;  padding-left: 10px;">Contact</span>
           %li.but.forth
-            %a.page-scroll{:href => "/web"} WEB DESIGN
+            %a.page-scroll{:href => "/web"}
+              %i.fa.fa-tablet{"aria-hidden" => "true"} <span style = "font-family: Open Sans;  padding-left: 10px;">Web Design</span>
           %li.but.fifth
-            %a.page-scroll{:href => "/marketing"} MARKETING
-          %l1.auth
-            - if !admin_signed_in?
-              = link_to "Sign in", new_admin_session_path
-            - else
-              = link_to "Sign out", destroy_admin_session_path, method: :delete
+            %a.page-scroll{:href => "/marketing"}
+              %i.fa.fa-dot-circle-o{"aria-hidden" => "true"} <span style = "font-family: Open Sans;  padding-left: 10px;">Marketing</span>
+
           / %li.but.sixth
           /   %a.page-scroll{:href => "#"} BRANDING
         / Switch
@@ -92,14 +99,14 @@
 
   Materialize.toast('I am a toast!', 3000, 'rounded')
 
-  $('ul.sidebar-nav').children().css("background-color", "red");
-      //$('.button-collapse').sideNav({
-       // menuWidth: 200,
-        //menuHeight: 300, // Default is 240
-       // edge: 'right', // Choose the horizontal origin
-       // closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-     // }
-   // );
+  // $('ul.sidebar-nav').children().css("background-color", "red");
+  //     $('.button-collapse').sideNav({
+  //      menuWidth: 400,
+  //       menuHeight: 300, // Default is 240
+  //      edge: 'right', // Choose the horizontal origin
+  //      closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+  //    }
+  //  );
   // $('.dropdown-button').dropdown({
   //   inDuration: 300,
   //   outDuration: 225,

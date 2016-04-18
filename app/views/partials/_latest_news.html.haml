@@ -4,7 +4,7 @@
   .row
     - blogs.each do |blog|
       .col.s12.m6.l3
-        .news
+        .news.z-depth-1
           .image-wrapper
             = link_to blog do
               = image_tag blog.image.url(:large)

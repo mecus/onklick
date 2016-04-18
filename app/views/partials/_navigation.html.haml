@@ -26,22 +26,34 @@
         %li
           %a.button.btn.waves-effect.waves-light.page-scroll{:href => "#page-top"} <span class="text-center" style = "font-size: 14px; letter-spacing: 1px;">Get a Quote</span>
       %ul#slide-out.side-nav
-        .chip-contianer.center-align
-          %a.brand-logo{:href => "/"}
-            %img{:src => "/assets/header_logo_white.png"}
-        .sidebar-nav.center
+        %l1.auth
+          - if !admin_signed_in?
+            = link_to "Sign in", new_admin_session_path
+          - else
+            = link_to "Sign out", destroy_admin_session_path, method: :delete
+          / %i.large.material-icons.z-depth-5.text-center home
+        .sidebar-nav
           %li.hidden
             %a.page-scroll{:href => "#page-top"}
           %li.but.first
-            %a.page-scroll{:href => "/#news"} NEWS
+            %a.page-scroll{:href => "/"}
+              %i.fa.fa-home{"aria-hidden" => "true"} <span style = "font-family: Open Sans;  padding-left: 10px;">Home</span>
+          %li.but.first
+            %a.page-scroll{:href => "/#news"}
+              %i.fa.fa-newspaper-o{"aria-hidden" => "true"} <span style = "font-family: Open Sans;  padding-left: 10px;">News</span>
           %li.but.second
-            %a.page-scroll{:href => "/services"} SERVICES
+            %a.page-scroll{:href => "#"}
+              %i.fa.fa.fa-cogs{"aria-hidden" => "true"} <span style = "font-family: Open Sans;  padding-left: 10px;">Services</span>
           %li.but.third
-            %a.page-scroll{:href => "/contact"} CONTACT
+            %a.page-scroll{:href => "/contact"}
+              %i.fa.fa-sticky-note-o{"aria-hidden" => "true"} <span style = "font-family: Open Sans;  padding-left: 10px;">Contact</span>
           %li.but.forth
-            %a.page-scroll{:href => "/web"} WEB DESIGN
+            %a.page-scroll{:href => "/web"}
+              %i.fa.fa-tablet{"aria-hidden" => "true"} <span style = "font-family: Open Sans;  padding-left: 10px;">Web Design</span>
           %li.but.fifth
-            %a.page-scroll{:href => "/marketing"} MARKETING
+            %a.page-scroll{:href => "/marketing"}
+              %i.fa.fa-dot-circle-o{"aria-hidden" => "true"} <span style = "font-family: Open Sans;  padding-left: 10px;">Marketing</span>
+
           / %li.but.sixth
           /   %a.page-scroll{:href => "#"} BRANDING
         / Switch
