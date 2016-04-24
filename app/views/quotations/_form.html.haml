@@ -1,5 +1,5 @@
 .quote
-  %p#notice= notice
+  / %p#notice= notice
   = form_for @quotation, remote: true do |f|
     - if @quotation.errors.any?
       #error_explanation

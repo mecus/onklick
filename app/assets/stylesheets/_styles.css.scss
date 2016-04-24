@@ -61,6 +61,10 @@ audio, video{
 //  font: inherit;
 //  vertical-align: baseline;
 }
+*{
+  box-sizing: border-size;
+}
+body{direction: ltr;}
 
 h1 {
   font-size: 26px;
@@ -846,12 +850,17 @@ opacity: 0;
 .process {
   padding-bottom: 50px;
   margin-bottom: 100px;
-  display: block;
+//  display: block ;
   .process-wrapper {
+    .flex-container{
+      display: -webkit-flex;
+      display: flex;
+    }
     .c-wrapper{
-      padding: auto;
-      margin: auto;
-      display: inline-block;
+      padding: 0 0 0 50px;
+      margin: 0 auto;
+			text-align: center !important;
+      display: inline-block !important;
     }
     display: block;
     text-align: center;
@@ -1638,7 +1647,9 @@ section {
 #quotation {
   padding-top: 100px;
   display: none;
-  background-color: rgba(0,0,0, 1.9);
+//  background-color: rgba(0,0,0, 1.9);
+	background-image: url('web2.jpg');
+	img{webkit-filter: blur(5px); filter: blur(5px);}
   background-size: cover;
   width: 100%;
   height: 1200px;
