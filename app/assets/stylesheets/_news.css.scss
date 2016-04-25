@@ -22,18 +22,19 @@
 	
 	.image-wrapper{
 		background-color: #000;
-		min-height: 300px;
-		max-width: 100%;
+		height: 300px;
+		width: 100%;
+		// min-width: 400px;
 		margin: 5px;
 		overflow: hidden;
-		img{
+		img {
 			-webkit-transition: all .3s ease-out;
 			-moz-transition: all .3s ease-out;
 			-o-transition: all .3s ease-out;
 			min-height: 300px;
 			height: auto;
-			min-width: 100%;
 			width: 100%;
+			min-width: 400px;
 			background-size: cover;
 			background-color: #000;
 			&:hover{transform: scale(1.785); opacity: 0.2;}
