@@ -6,21 +6,21 @@
       .link-top
         %a.page-scroll.right{:href => "#page-top"} Top
   / floating button start here
-  .fixed-action-btn.vertical{:style => "bottom: 65px; right: 40px;"}
-    %a.btn-floating.btn-med.red
+  .fixed-action-btn.vertical.click-to-toggle{:style => "bottom: 65px; right: 40px;"}
+    %a.btn-floating.btn-med.green
       %i.large.mdi-navigation-menu
     %ul
       %li
-        %a.btn-floating.red
+        %a.btn-floating{:href => "https://plus.google.com/b/115062445488967931065/115062445488967931065/about?gmbpt=true&hl=en-GB", target: "blank"}
           %i.fa.fa-google-plus
       %li
-        %a.btn-floating.yellow.darken-1{:href =>"https://www.linkedin.com/in/austin-oseh-515228a6?trk=nav_responsive_tab_profile", target: "blank"}
+        %a.btn-floating.darken-1{:href =>"https://www.linkedin.com/in/austin-oseh-515228a6?trk=nav_responsive_tab_profile", target: "blank"}
           %i.fa.fa-linkedin
       %li
-        %a.btn-floating.green
+        %a.btn-floating
           %i.fa.fa-twitter
       %li
-        %a.btn-floating.blue{:href => "https://www.facebook.com/onklickmedia", :target => "blank"}
+        %a.btn-floating{:href => "https://www.facebook.com/onklickmedia", :target => "blank"}
           %i.fa.fa-facebook
   / end of floating button
 // :javascript
