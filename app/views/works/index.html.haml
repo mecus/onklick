@@ -1,0 +1,33 @@
+= render "partials/navigation"
+%br/
+%br/
+.container
+	%table
+		%thaed
+			%tr
+				%th Clients
+				%th Job Type
+				%th Image
+				%th Industry
+				%th Descriptions
+				%th
+				%th
+				%th
+		%tbody
+			- @work.each do |work|
+				%tr
+					%br/
+					%td= work.client
+					%td= work.job_type
+					%td= image_tag work.image.url(:thumb)
+					%td= work.industry
+					%td= work.description
+					%td= link_to 'Show', work
+					%td= link_to 'Edit', edit_work_path(work)
+					%td= link_to 'Destroy', work, :method => :delete, :data => { :confirm => 'Are you sure?' }
+	%br/
+	%br/				
+	= link_to "New Work", new_work_path
+
+				
+

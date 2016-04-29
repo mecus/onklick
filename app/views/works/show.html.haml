@@ -1,0 +1,14 @@
+= render "partials/navigation"
+/ = render "partials/quote"
+.news-wrapper
+  .img-wrapper
+    =image_tag @work.image.url(:large)
+    .img-filter
+    .news-title.container
+      %h1= @work.client
+      %h6= @work.job_type
+      %h6= @work.industry
+      %h6= @work.description
+      %h5
+        Posted on
+        = @work.created_at.to_formatted_s(:long_ordinal)

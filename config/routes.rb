@@ -3,17 +3,17 @@ Rails.application.routes.draw do
   devise_for :admins, controllers: {
     sessions: 'admins/sessions'
   }
+  resources :works
   resources :blogs
   resources :quotations
   resources :contacts
   root 'pages#home'
-
   get 'marketing' => 'pages#marketing'
-
   get 'company' => 'pages#company'
   get 'news' => 'pages#news'
   get 'contact' =>  'pages#contact'
   get 'web' => 'pages#webdesign'
+  get 'projects' => 'pages#projects'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
